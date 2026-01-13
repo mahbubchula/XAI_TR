@@ -37,14 +37,6 @@ Before starting this module, you should:
 ## 🎯 Learning Objectives
 
 By the end of this module, you will be able to:
-1. Determine whether your research question is suitable for Machine Learning
-2. Transform vague research ideas into well-defined ML problems
-3. Define measurable success metrics for your ML project
-4. Identify your data requirements and constraints
-5. Create a structured problem formulation document
-## 🎯 Learning Objectives
-
-By the end of this module, you will be able to:
 
 🔍 **Evaluate ML Suitability**  
 - Determine whether a given research question truly benefits from Machine Learning
@@ -60,7 +52,9 @@ By the end of this module, you will be able to:
 
 📝 **Create a Problem Formulation Document**  
 - Develop a structured document that clearly defines the ML problem, inputs, outputs, metrics, and assumptions
-## 🎯 Learning Objectives
+
+Below is a concise summary of the key skills and competencies you will develop by completing this module. 
+These learning objectives outline what you will be able to do in practice, helping you understand how this module prepares you to formulate clear, effective, and research-ready Machine Learning problems.
 
 | Skill | What You Will Learn |
 |-----|---------------------|
