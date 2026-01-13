@@ -102,6 +102,15 @@ Machine Learning is not always the right tool. In some cases, simpler or more tr
 | ❓ **Relevant data is missing** | ML cannot compensate for data that does not reflect the target outcome |
 
 ---
+#### 📌 Mini Case Example
+
+**Scenario:** A researcher wants to detect fake news articles.
+
+- Data: Thousands of labeled news articles
+- Problem: Complex linguistic patterns
+- Output: Fake / Real label
+
+**Decision:** ✅ Machine Learning is appropriate because simple rules cannot capture language complexity.
 
 #### 🧠 Key Insight
 
