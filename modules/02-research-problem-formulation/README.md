@@ -115,13 +115,17 @@ Machine Learning is not always the right tool. In some cases, simpler or more tr
 
 > **Machine Learning should be chosen because it adds value—not because it is fashionable.**  
 > A well-formulated research problem always starts with selecting the *right tool* for the task.
-
+--
 
 
 ### Section 2: Types of Machine Learning Problems
 
-Choosing the correct **Machine Learning problem type** is a foundational research decision.  
-It directly affects your **data requirements, model choice, evaluation metrics, and explainability strategy**.
+Before selecting algorithms or building models, it is essential to clearly understand **what type of Machine Learning problem you are trying to solve**. Machine Learning problems differ primarily in **the nature of their outputs**, the **availability of labeled data**, and the **goal of the analysis**—whether it is prediction, estimation, discovery, or detection.
+
+In research settings, misidentifying the problem type is a common and costly mistake. For example, treating a continuous prediction task as a classification problem can lead to information loss, while using unsupervised methods when labeled data already exists can result in inefficient or misleading analyses. A correct problem-type formulation ensures that the **chosen models, evaluation metrics, data requirements, and explainability techniques** are all aligned with the research objective.
+
+Broadly, most Machine Learning research problems fall into four major categories: **classification**, **regression**, **clustering**, and **anomaly detection**. Each category answers a different kind of research question, requires different forms of data, and serves different scientific goals. This section introduces these problem types, explains their defining characteristics, and provides research-oriented examples to help you accurately identify the category that best matches your research question.
+
 
 ---
 
@@ -137,9 +141,7 @@ It directly affects your **data requirements, model choice, evaluation metrics, 
 ---
 
 ## 🏷️ 2.1 Classification Problems
-
-**What it is**  
-Assigning inputs to **predefined categories** using labeled examples.
+Classification problems focus on assigning each input instance to one or more **predefined categories or labels**. The goal is to learn a decision boundary from labeled examples so that the model can correctly categorize unseen data. Classification is one of the most widely used ML problem types, especially in research domains where decisions are categorical rather than numerical.
 
 **Ask this question:**  
 > *“Which class does this belong to?”*
@@ -167,9 +169,8 @@ Assigning inputs to **predefined categories** using labeled examples.
 ---
 
 ## 📈 2.2 Regression Problems
+Regression problems aim to predict a **continuous numerical value** based on input features. Unlike classification, where outputs are discrete categories, regression outputs are real-valued quantities. These problems are common in scientific research where estimation, forecasting, or measurement prediction is required.
 
-**What it is**  
-Predicting a **continuous numerical value**.
 
 **Ask this question:**  
 > *“How much or how many?”*
@@ -192,9 +193,8 @@ Predicting a **continuous numerical value**.
 ---
 
 ## 🧬 2.3 Clustering Problems
+Clustering problems involve **grouping similar data points together without predefined labels**. The objective is not prediction, but discovery—uncovering hidden structures or natural groupings within the data. Clustering is especially useful in exploratory research and early-stage data analysis.
 
-**What it is**  
-Automatically grouping similar items **without predefined labels**.
 
 **Ask this question:**  
 > *“What natural groups exist in this data?”*
@@ -217,9 +217,8 @@ Automatically grouping similar items **without predefined labels**.
 ---
 
 ## 🚨 2.4 Anomaly Detection
+Anomaly detection focuses on identifying **rare, unusual, or abnormal instances** that deviate significantly from normal patterns in the data. These problems are important in research areas where rare events carry high significance, such as fraud detection, fault diagnosis, or rare disease identification.
 
-**What it is**  
-Identifying **rare, abnormal, or unexpected** data points.
 
 **Ask this question:**  
 > *“Is this normal or unusual?”*
