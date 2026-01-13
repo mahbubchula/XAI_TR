@@ -65,7 +65,6 @@ These learning objectives outline what you will be able to do in practice, helpi
 | Documentation | Create a structured ML problem formulation document |
 
 ## 📚 Module Content
-## 📚 Module Content
 
 ### Section 1: When Should You Use Machine Learning?
 
@@ -117,50 +116,6 @@ Machine Learning is not always the right tool. In some cases, simpler or more tr
 > **Machine Learning should be chosen because it adds value—not because it is fashionable.**  
 > A well-formulated research problem always starts with selecting the *right tool* for the task.
 
-### Section 1: When Should You Use Machine Learning?
-
-Not every research problem needs ML. Understanding when ML is appropriate will save you time and lead to better research.
-
-**ML is a Good Fit When:**
-
-✅ **You have patterns in data to learn from**
-- Example: Predicting disease from patient symptoms and test results
-- Why it works: Historical data shows patterns between symptoms and diagnoses
-
-✅ **The problem is too complex for simple rules**
-- Example: Identifying spam emails (too many variations for simple rules)
-- Why it works: ML can learn complex combinations of features
-
-✅ **You have sufficient data**
-- Example: Classifying plant species from images (with hundreds of labeled images)
-- Why it works: ML needs examples to learn from
-
-✅ **The problem involves prediction or classification**
-- Example: Forecasting crop yields based on weather and soil data
-- Why it works: ML excels at finding predictive relationships
-
-✅ **Manual analysis would be too time-consuming**
-- Example: Analyzing thousands of research papers to identify trends
-- Why it works: ML can process large volumes efficiently
-
-**ML Might NOT Be the Best Fit When:**
-
-❌ **You have very little data**
-- If you only have 20-30 examples, traditional statistical methods may work better
-
-❌ **Simple rules work well**
-- If "IF temperature > 100°C THEN water boils" solves your problem, you don't need ML
-
-❌ **You need 100% explainability from the start**
-- Some highly regulated fields require complete transparency that complex ML can't provide
-
-❌ **The cost of errors is extremely high**
-- Life-critical systems may need more traditional, provably safe approaches
-
-❌ **You don't have the right data**
-- If your available data doesn't relate to what you want to predict, ML can't help
-
----
 
 ### Section 2: Types of ML Problems
 
@@ -231,6 +186,140 @@ Understanding what type of ML problem you have helps you choose the right approa
 - Finding experimental anomalies
 
 ---
+### Section 2: Types of Machine Learning Problems
+
+Understanding the **type of Machine Learning problem** you are working on is essential for selecting the correct modeling approach, evaluation metrics, and data requirements.
+
+---
+
+### 🧭 Quick Overview of ML Problem Types
+
+| Problem Type | Output Type | Typical Use Case |
+|-------------|------------|------------------|
+| Classification | Discrete categories | Spam detection, disease diagnosis |
+| Regression | Continuous values | Temperature prediction, forecasting |
+| Clustering | Group assignments | Customer segmentation, pattern discovery |
+| Anomaly Detection | Normal / abnormal | Fraud detection, fault monitoring |
+
+---
+
+### 🔖 2.1 Classification Problems
+
+**What it is:**  
+Assigning items to **predefined categories** based on input features.
+
+**Typical question:**  
+> *“What category does this belong to?”*
+
+**Common types:**
+- **Binary classification:** Two categories (e.g., spam / not spam)
+- **Multi-class classification:** More than two categories
+- **Multi-label classification:** Multiple categories per item
+
+**Examples:**
+- Is this email spam or not spam?
+- What species is this plant?
+- Which genres does this movie belong to?
+
+**Research applications:**
+- Diagnosing diseases (healthy, disease A, disease B)
+- Classifying cell types from microscopy images
+- Categorizing research papers by topic
+
+📌 **Data requirement:** Labeled data (Supervised Learning)
+
+---
+
+### 📐 2.2 Regression Problems
+
+**What it is:**  
+Predicting a **continuous numerical value**.
+
+**Typical questions:**  
+> *“How much?”* or *“How many?”*
+
+**Examples:**
+- What will the temperature be tomorrow?
+- How long will a patient stay in the hospital?
+- What will be the crop yield this season?
+
+**Research applications:**
+- Predicting patient recovery time
+- Estimating protein binding affinity
+- Forecasting energy consumption
+
+📌 **Data requirement:** Numeric target values (Supervised Learning)
+
+---
+
+### 🔗 2.3 Clustering Problems
+
+**What it is:**  
+Grouping similar data points **without predefined labels**.
+
+**Typical question:**  
+> *“What natural groups exist in this data?”*
+
+**Examples:**
+- Grouping customers by purchasing behavior
+- Identifying distinct patient populations
+- Discovering types of galaxy formations
+
+**Research applications:**
+- Finding patient subgroups with similar treatment responses
+- Identifying ecosystem types from environmental data
+- Discovering patterns in gene expression data
+
+📌 **Data requirement:** No labels required (Unsupervised Learning)
+
+---
+
+### 🚨 2.4 Anomaly Detection
+
+**What it is:**  
+Identifying **unusual, rare, or abnormal** data points.
+
+**Typical question:**  
+> *“Is this normal or unusual?”*
+
+**Examples:**
+- Detecting fraudulent transactions
+- Identifying equipment failures
+- Finding unusual sensor readings
+
+**Research applications:**
+- Detecting rare disease cases
+- Identifying unusual geological formations
+- Discovering experimental anomalies
+
+📌 **Data requirement:** Often unlabeled or weakly labeled data
+
+---
+
+### 🧠 How to Identify Your Problem Type (Quick Guide)
+
+- Predicting a **category** → Classification  
+- Predicting a **number** → Regression  
+- Discovering **hidden groups** → Clustering  
+- Finding **rare or unusual cases** → Anomaly Detection  
+
+---
+
+### ⚠️ Common Pitfalls
+
+- Treating regression problems as classification (or vice versa)
+- Using clustering when labels already exist
+- Ignoring class imbalance in classification problems
+- Assuming anomaly detection works without domain understanding
+
+---
+
+### 🔑 Key Takeaway
+
+> Choosing the correct ML problem type is a **conceptual decision**, not a modeling one.  
+> A clear problem type leads to better data selection, evaluation, and interpretation.
+
+
 
 ### Section 3: From Research Question to ML Problem
 
