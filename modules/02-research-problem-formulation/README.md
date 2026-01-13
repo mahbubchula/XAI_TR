@@ -31,7 +31,7 @@ Before starting this module, you should:
   - **Machine Learning (ML)**
   - **Explainable Artificial Intelligence (XAI)**
 - [x] Have a research area or question in mind (or be curious to learn!)
- - **Have a **general research area, problem domain, or preliminary research question** in mind  
+  - Have a **general research area, problem domain, or preliminary research question** in mind  
   *(a fully defined research problem is not required)*
 
 ## 🎯 Learning Objectives
