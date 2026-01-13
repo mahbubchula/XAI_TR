@@ -65,6 +65,48 @@ These learning objectives outline what you will be able to do in practice, helpi
 | Documentation | Create a structured ML problem formulation document |
 
 ## 📚 Module Content
+## 📚 Module Content
+
+### Section 1: When Should You Use Machine Learning?
+
+Before applying Machine Learning, it is essential to ask a fundamental question:  
+**Does this research problem actually benefit from ML?**  
+Using ML where it is not needed can waste time, data, and computational resources. This section helps you build the intuition to make informed decisions.
+
+---
+
+#### ✅ When Machine Learning Is a Good Fit
+
+Machine Learning is well-suited for a research problem when **patterns exist in data that are difficult to define manually**, and sufficient examples are available for learning.
+
+| Situation | Example | Why ML Works |
+|---------|--------|-------------|
+| 📊 **Patterns exist in data** | Predicting diseases from patient symptoms and lab results | Historical data reveals consistent relationships between symptoms and diagnoses |
+| 🧠 **Problem is too complex for simple rules** | Identifying spam emails | Spam patterns change and involve many interacting features |
+| 📁 **Sufficient data is available** | Classifying plant species from images | ML improves as it learns from many labeled examples |
+| 🔮 **Prediction or classification is required** | Forecasting crop yield using weather and soil data | ML excels at discovering predictive relationships |
+| ⏱️ **Manual analysis is impractical** | Analyzing thousands of research papers | ML can scale to large datasets efficiently |
+
+---
+
+#### ❌ When Machine Learning May NOT Be the Best Choice
+
+Machine Learning is not always the right tool. In some cases, simpler or more transparent methods are preferable.
+
+| Situation | Explanation |
+|---------|-------------|
+| 📉 **Very little data is available** | With only 20–30 samples, traditional statistical methods are often more reliable |
+| 🧮 **Simple rules already solve the problem** | If a clear rule exists (e.g., *if temperature > 100°C, water boils*), ML adds no value |
+| 🔍 **Full explainability is required from the start** | Highly regulated domains may require transparent, rule-based systems |
+| ⚠️ **Cost of errors is extremely high** | Life-critical systems may require provably safe approaches |
+| ❓ **Relevant data is missing** | ML cannot compensate for data that does not reflect the target outcome |
+
+---
+
+#### 🧠 Key Insight
+
+> **Machine Learning should be chosen because it adds value—not because it is fashionable.**  
+> A well-formulated research problem always starts with selecting the *right tool* for the task.
 
 ### Section 1: When Should You Use Machine Learning?
 
