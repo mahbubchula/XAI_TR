@@ -249,6 +249,151 @@ Identifying **unusual, rare, or abnormal** data points.
 
 > Choosing the correct ML problem type is a **conceptual decision**, not a modeling one.  
 > A clear problem type leads to better data selection, evaluation, and interpretation.
+### Section 2: Types of Machine Learning Problems
+
+Choosing the correct **Machine Learning problem type** is a foundational research decision.  
+It directly affects your **data requirements, model choice, evaluation metrics, and explainability strategy**.
+
+---
+
+## 🧩 At a Glance: ML Problem Types
+
+| Problem Type | Output | Key Question | Example |
+|-------------|--------|--------------|--------|
+| 🏷️ Classification | Category | *Which class?* | Disease diagnosis |
+| 📈 Regression | Number | *How much?* | Temperature prediction |
+| 🧬 Clustering | Groups | *What patterns exist?* | Patient subgroups |
+| 🚨 Anomaly Detection | Normal / Abnormal | *Is this unusual?* | Fraud detection |
+
+---
+
+## 🏷️ 2.1 Classification Problems
+
+**What it is**  
+Assigning inputs to **predefined categories** using labeled examples.
+
+**Ask this question:**  
+> *“Which class does this belong to?”*
+
+**Common forms**
+- Binary (2 classes)
+- Multi-class (many classes)
+- Multi-label (multiple classes per item)
+
+**Examples**
+- Is this email spam or not spam?
+- What species is this plant?
+- Which genres does this movie belong to?
+
+**Research applications**
+- Disease diagnosis
+- Cell type identification
+- Document categorization
+
+🧠 **When to use classification**  
+✔ When your output is a **label or category**
+
+📌 **Learning type:** Supervised
+
+---
+
+## 📈 2.2 Regression Problems
+
+**What it is**  
+Predicting a **continuous numerical value**.
+
+**Ask this question:**  
+> *“How much or how many?”*
+
+**Examples**
+- What will the temperature be tomorrow?
+- How long will a patient stay in the hospital?
+- What will be the crop yield this season?
+
+**Research applications**
+- Recovery time prediction
+- Protein binding affinity estimation
+- Energy demand forecasting
+
+🧠 **When to use regression**  
+✔ When your output is a **number**
+
+📌 **Learning type:** Supervised
+
+---
+
+## 🧬 2.3 Clustering Problems
+
+**What it is**  
+Automatically grouping similar items **without predefined labels**.
+
+**Ask this question:**  
+> *“What natural groups exist in this data?”*
+
+**Examples**
+- Customer segmentation
+- Patient stratification
+- Galaxy morphology discovery
+
+**Research applications**
+- Treatment response analysis
+- Ecosystem identification
+- Gene expression analysis
+
+🧠 **When to use clustering**  
+✔ When you want **discovery**, not prediction
+
+📌 **Learning type:** Unsupervised
+
+---
+
+## 🚨 2.4 Anomaly Detection
+
+**What it is**  
+Identifying **rare, abnormal, or unexpected** data points.
+
+**Ask this question:**  
+> *“Is this normal or unusual?”*
+
+**Examples**
+- Fraud detection
+- Equipment failure detection
+- Sensor malfunction detection
+
+**Research applications**
+- Rare disease detection
+- Geological anomaly discovery
+- Experimental error identification
+
+🧠 **When to use anomaly detection**  
+✔ When **rare events matter more than average cases**
+
+📌 **Learning type:** Often unsupervised or semi-supervised
+
+---
+
+## 🧭 How to Choose the Right Problem Type (1-Minute Rule)
+
+- Predict a **category** → 🏷️ Classification  
+- Predict a **number** → 📈 Regression  
+- Discover **hidden structure** → 🧬 Clustering  
+- Detect **rare events** → 🚨 Anomaly Detection  
+
+---
+
+## ⚠️ Common Beginner Confusions
+
+- ❌ Turning a regression problem into classification by arbitrary thresholds  
+- ❌ Using clustering when labels already exist  
+- ❌ Ignoring imbalance in classification or anomaly detection  
+- ❌ Choosing the problem type after seeing model results
+
+---
+
+## 🔑 Core Takeaway
+
+> **Problem type selection is a thinking task, not a coding task.**  
+> Get this right, and the rest of your ML pipeline becomes much easier.
 
 
 
