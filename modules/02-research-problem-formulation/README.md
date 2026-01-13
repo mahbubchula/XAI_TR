@@ -35,8 +35,9 @@ Before starting this module, you should:
   *(a fully defined research problem is not required)*
 
 ## 🎯 Learning Objectives
+This module is designed to build a strong conceptual foundation for Machine Learning research. 
+By the end of this module, learners will clearly understand how to transform research ideas into well-defined ML problems and make informed decisions before model development begins.
 
-By the end of this module, you will be able to:
 
 🔍 **Evaluate ML Suitability**  
 - Determine whether a given research question truly benefits from Machine Learning
