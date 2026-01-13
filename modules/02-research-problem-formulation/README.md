@@ -35,35 +35,45 @@ Before starting this module, you should:
   *(a fully defined research problem is not required)*
 
 ## 🎯 Learning Objectives
-This module is designed to build a strong conceptual foundation for Machine Learning research. 
-By the end of this module, learners will clearly understand how to transform research ideas into well-defined ML problems and make informed decisions before model development begins.
 
+This module focuses on developing a strong conceptual and research-oriented foundation for Machine Learning problem formulation. Rather than jumping directly into algorithms or code, learners will gain the ability to critically think about **whether Machine Learning is appropriate**, **how a problem should be framed**, and **what success means** in a research context.
 
-🔍 **Evaluate ML Suitability**  
-- Determine whether a given research question truly benefits from Machine Learning
+By the end of this module, you will be able to:
 
-🧩 **Formulate ML Problems**  
-- Transform vague or broad research ideas into clear, well-defined ML problem statements
+- 🔍 **Critically Evaluate ML Suitability**  
+  Analyze a research question to determine whether Machine Learning is an appropriate and effective approach compared to traditional methods.
 
-📏 **Define Success Metrics**  
-- Select appropriate, measurable evaluation metrics to assess model performance
+- 🧠 **Translate Research Questions into ML Problems**  
+  Convert broad, abstract, or ambiguous research ideas into clear, structured, and well-defined Machine Learning problem statements.
 
-🗂️ **Assess Data Requirements**  
-- Identify required data sources, feature types, constraints, and potential limitations
+- 🏷️ **Identify the Correct ML Problem Type**  
+  Distinguish between classification, regression, clustering, and anomaly detection problems, and select the most suitable type for a given research goal.
 
-📝 **Create a Problem Formulation Document**  
-- Develop a structured document that clearly defines the ML problem, inputs, outputs, metrics, and assumptions
+- 📐 **Define Clear Objectives and Success Metrics**  
+  Establish measurable performance criteria and evaluation metrics that align with the research objectives and domain requirements.
+
+- 🗂️ **Assess Data Requirements and Constraints**  
+  Identify required data sources, feature types, data quantity, quality issues, and practical constraints that may affect model development.
+
+- 📝 **Develop a Formal Problem Formulation Document**  
+  Create a structured, research-ready document that clearly defines the ML problem, assumptions, inputs, outputs, evaluation strategy, ethical considerations, and explainability needs.
+
+- ⚖️ **Incorporate Explainability and Ethical Considerations**  
+  Recognize the importance of explainability (XAI), fairness, and ethical constraints, and integrate them into the problem formulation process from the outset.
+
 
 Below is a concise summary of the key skills and competencies you will develop by completing this module. 
 These learning objectives outline what you will be able to do in practice, helping you understand how this module prepares you to formulate clear, effective, and research-ready Machine Learning problems.
 
-| Skill | What You Will Learn |
-|-----|---------------------|
-| ML Suitability | Decide when Machine Learning is appropriate for a research question |
-| Problem Framing | Convert vague ideas into well-defined ML problems |
-| Evaluation | Define meaningful and measurable success metrics |
-| Data Awareness | Identify data needs, quality issues, and constraints |
-| Documentation | Create a structured ML problem formulation document |
+| Skill Area | What You Will Learn |
+|-----------|---------------------|
+| 🔍 ML Suitability | Critically evaluate whether a research question truly benefits from Machine Learning compared to traditional approaches |
+| 🧩 Problem Framing | Transform vague or broad research ideas into clear, well-defined, and actionable ML problem statements |
+| 🏷️ Problem Type Selection | Identify and select the correct ML problem type (classification, regression, clustering, anomaly detection) |
+| 📐 Evaluation & Metrics | Define meaningful, measurable success metrics and evaluation strategies aligned with research goals |
+| 🗂️ Data Awareness | Assess data requirements, availability, quality issues, imbalance, and practical constraints |
+| 🧠 Explainability & Ethics | Recognize explainability (XAI), fairness, and ethical considerations and incorporate them early |
+| 📝 Documentation | Develop a structured, research-ready ML problem formulation document for reproducibility and reporting |
 
 ## 📚 Module Content
 
