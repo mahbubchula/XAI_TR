@@ -27,6 +27,9 @@ By the end of this module, you will be able to produce a complete problem formul
 Before starting this module, you should:
 - [x] Have completed [Module 01 - Introduction](../01-introduction/)
 - [x] Understand what AI, ML, and XAI are
+Artificial Intelligence (AI)
+Machine Learning (ML)
+Explainable Artificial Intelligence (XAI)
 - [x] Have a research area or question in mind (or be curious to learn!)
 
 ## 🎯 Learning Objectives
