@@ -42,6 +42,33 @@ By the end of this module, you will be able to:
 3. Define measurable success metrics for your ML project
 4. Identify your data requirements and constraints
 5. Create a structured problem formulation document
+## 🎯 Learning Objectives
+
+By the end of this module, you will be able to:
+
+🔍 **Evaluate ML Suitability**  
+- Determine whether a given research question truly benefits from Machine Learning
+
+🧩 **Formulate ML Problems**  
+- Transform vague or broad research ideas into clear, well-defined ML problem statements
+
+📏 **Define Success Metrics**  
+- Select appropriate, measurable evaluation metrics to assess model performance
+
+🗂️ **Assess Data Requirements**  
+- Identify required data sources, feature types, constraints, and potential limitations
+
+📝 **Create a Problem Formulation Document**  
+- Develop a structured document that clearly defines the ML problem, inputs, outputs, metrics, and assumptions
+## 🎯 Learning Objectives
+
+| Skill | What You Will Learn |
+|-----|---------------------|
+| ML Suitability | Decide when Machine Learning is appropriate for a research question |
+| Problem Framing | Convert vague ideas into well-defined ML problems |
+| Evaluation | Define meaningful and measurable success metrics |
+| Data Awareness | Identify data needs, quality issues, and constraints |
+| Documentation | Create a structured ML problem formulation document |
 
 ## 📚 Module Content
 
