@@ -15,6 +15,8 @@ In this module, you will learn how to critically evaluate whether a research que
 Beyond technical framing, this module emphasizes research thinking—helping you understand why certain problems are suitable for ML, what assumptions are being made, and how your formulation choices impact model design, evaluation, and interpretation. Special attention is given to Explainable AI (XAI) considerations, ensuring that your problem formulation supports transparency, trust, and real-world usability from the very beginning.
 
 By the end of this module, you will be able to produce a complete problem formulation document that serves as a blueprint for the rest of your AI research pipeline, including data collection, modeling, evaluation, and reporting. This module is designed to build strong conceptual foundations for students, researchers, and practitioners before they write a single line of code.
+
+
 **Duration:** 3-4 hours  
 **Difficulty:** Beginner
 
