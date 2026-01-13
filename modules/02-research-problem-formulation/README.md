@@ -175,7 +175,6 @@ Classification problems focus on assigning each input instance to one or more **
 🧠 **When to use classification**  
 ✔ When your output is a **label or category**
 
-📌 **Learning type:** Supervised
 
 ---
 
@@ -199,7 +198,6 @@ Regression problems aim to predict a **continuous numerical value** based on inp
 🧠 **When to use regression**  
 ✔ When your output is a **number**
 
-📌 **Learning type:** Supervised
 
 ---
 
@@ -223,7 +221,6 @@ Clustering problems involve **grouping similar data points together without pred
 🧠 **When to use clustering**  
 ✔ When you want **discovery**, not prediction
 
-📌 **Learning type:** Unsupervised
 
 ---
 
@@ -246,8 +243,6 @@ Anomaly detection focuses on identifying **rare, unusual, or abnormal instances*
 
 🧠 **When to use anomaly detection**  
 ✔ When **rare events matter more than average cases**
-
-📌 **Learning type:** Often unsupervised or semi-supervised
 
 ---
 
@@ -275,7 +270,7 @@ Anomaly detection focuses on identifying **rare, unusual, or abnormal instances*
 > Get this right, and the rest of your ML pipeline becomes much easier.
 
 
-
+--
 ### Section 3: From Research Question to ML Problem
 
 Let's walk through transforming vague research questions into well-defined ML problems.
