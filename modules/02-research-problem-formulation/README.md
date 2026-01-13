@@ -1,3 +1,8 @@
+<img width="1408" height="768" alt="Gemini_Generated_Image_g3z5r1g3z5r1g3z5" src="https://github.com/user-attachments/assets/bb9ebf26-7f63-455b-8cbd-b20f0aa03c6e" />
+
+
+
+
 # Module 02: Research Problem Formulation
 
 ## 📋 Overview
