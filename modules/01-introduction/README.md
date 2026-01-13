@@ -1,4 +1,4 @@
-# Module 01: Introduction to AI, ML, and XAI
+# Module 01: Introduction to Artificial Intelligence, Machine learning, and XAI
 
 ## 📋 Overview
 
