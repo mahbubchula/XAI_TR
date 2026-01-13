@@ -5,6 +5,8 @@
 
 
 
+![Status](https://img.shields.io/badge/Module-Research-blue)
+![Level](https://img.shields.io/badge/Level-Beginner-green)
 
 ## 📋 Overview
 
