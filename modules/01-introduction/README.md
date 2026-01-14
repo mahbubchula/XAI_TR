@@ -1,4 +1,4 @@
-# Module 01: Introduction to Artificial Intelligence, Machine learning, and Xplainable Artificial Intelligence 
+#Module 01: Introduction to Artificial Intelligence, Machine Learning, and Explainable Artificial Intelligence
 
 ## 📋 Overview
 
