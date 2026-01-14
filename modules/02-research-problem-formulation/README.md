@@ -308,6 +308,27 @@ Add constraints (ethics, fairness, privacy, compute, explainability)
 Well-Defined ML Problem (ready for modeling and experiments)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. What is your research field?
+   [Your answer]
 **Example 1: Biology Research**
 
 ❓ **Vague Research Question:**
@@ -473,9 +494,6 @@ Complete this worksheet to formulate your ML research problem:
 
 #### Part 1: Research Context
 ```
-1. What is your research field?
-   [Your answer]
-
 2. What is your broad research interest?
    [Your answer]
 
