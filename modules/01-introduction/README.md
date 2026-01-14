@@ -70,7 +70,7 @@ Welcome to the beginning of your AI research journey! This module introduces:
 **🎯 Difficulty:** Beginner → Intermediate
 
 ---
-
+<a id="prerequisites"></a>
 ## ✅ Prerequisites
 
 None! This is where everyone starts.
