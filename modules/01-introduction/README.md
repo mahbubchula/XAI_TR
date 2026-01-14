@@ -12,42 +12,38 @@ Paste this entire content into: modules/01-introduction/README.md
 
 ## 🔎 Quick Navigation
 
-<!-- ✅ FINAL v2: Bigger emoji icons + NO Assumptions button -->
-<!-- Note: Emoji size in shields.io is limited by the badge renderer.
-     This version makes icons look bigger by: (1) using a bigger logoWidth
-     and (2) using a heavier emoji set. -->
+<!-- ✅ FIXED (Roadmap bug solved) -->
+<!-- Reason: GitHub auto-anchor sometimes breaks with emoji/colon headings.
+     Solution: Use stable custom anchors via <a id="..."></a> and link to them. -->
 
 <p align="center">
-  <a href="#-overview"><img src="https://img.shields.io/badge/🧭%20%20OVERVIEW-0B1220?style=for-the-badge&logoWidth=90"></a>
-  <a href="#-prerequisites"><img src="https://img.shields.io/badge/✅%20%20PREREQUISITES-0B1220?style=for-the-badge&logoWidth=90"></a>
-  <a href="#-learning-objectives"><img src="https://img.shields.io/badge/🎯%20%20OBJECTIVES-0B1220?style=for-the-badge&logoWidth=90"></a>
-  <a href="#-roadmap-where-this-module-fits"><img src="https://img.shields.io/badge/🗺️%20%20ROADMAP-0B1220?style=for-the-badge&logoWidth=90"></a>
+  <a href="#overview"><img src="https://img.shields.io/badge/🧭%20%20OVERVIEW-0B1220?style=for-the-badge&logoWidth=90"></a>
+  <a href="#prerequisites"><img src="https://img.shields.io/badge/✅%20%20PREREQUISITES-0B1220?style=for-the-badge&logoWidth=90"></a>
+  <a href="#objectives"><img src="https://img.shields.io/badge/🎯%20%20OBJECTIVES-0B1220?style=for-the-badge&logoWidth=90"></a>
+  <a href="#roadmap"><img src="https://img.shields.io/badge/🗺️%20%20ROADMAP-0B1220?style=for-the-badge&logoWidth=90"></a>
 </p>
 
 <p align="center">
-  <a href="#-how-to-use-this-repo"><img src="https://img.shields.io/badge/🧰%20%20USE%20REPO-0B1220?style=for-the-badge&logoWidth=90"></a>
-  <a href="#-workflow-overview-ml--xai--paper-writing"><img src="https://img.shields.io/badge/🔁%20%20WORKFLOW-0B1220?style=for-the-badge&logoWidth=90"></a>
-  <a href="#-module-content"><img src="https://img.shields.io/badge/📚%20%20CONTENT-0B1220?style=for-the-badge&logoWidth=90"></a>
-  <a href="#-key-takeaways"><img src="https://img.shields.io/badge/💡%20%20TAKEAWAYS-0B1220?style=for-the-badge&logoWidth=90"></a>
+  <a href="#use-repo"><img src="https://img.shields.io/badge/🧰%20%20USE%20REPO-0B1220?style=for-the-badge&logoWidth=90"></a>
+  <a href="#workflow"><img src="https://img.shields.io/badge/🔁%20%20WORKFLOW-0B1220?style=for-the-badge&logoWidth=90"></a>
+  <a href="#content"><img src="https://img.shields.io/badge/📚%20%20CONTENT-0B1220?style=for-the-badge&logoWidth=90"></a>
+  <a href="#takeaways"><img src="https://img.shields.io/badge/💡%20%20TAKEAWAYS-0B1220?style=for-the-badge&logoWidth=90"></a>
 </p>
 
 <p align="center">
-  <a href="#-hands-on-exercise"><img src="https://img.shields.io/badge/🧪%20%20EXERCISE-0B1220?style=for-the-badge&logoWidth=90"></a>
-  <a href="#-glossary"><img src="https://img.shields.io/badge/📖%20%20GLOSSARY-0B1220?style=for-the-badge&logoWidth=90"></a>
-  <a href="#-resources-and-further-reading"><img src="https://img.shields.io/badge/📚%20%20RESOURCES-0B1220?style=for-the-badge&logoWidth=90"></a>
-  <a href="#-self-check-questions"><img src="https://img.shields.io/badge/🧠%20%20SELF--CHECK-0B1220?style=for-the-badge&logoWidth=90"></a>
+  <a href="#exercise"><img src="https://img.shields.io/badge/🧪%20%20EXERCISE-0B1220?style=for-the-badge&logoWidth=90"></a>
+  <a href="#glossary"><img src="https://img.shields.io/badge/📖%20%20GLOSSARY-0B1220?style=for-the-badge&logoWidth=90"></a>
+  <a href="#resources"><img src="https://img.shields.io/badge/📚%20%20RESOURCES-0B1220?style=for-the-badge&logoWidth=90"></a>
+  <a href="#self-check"><img src="https://img.shields.io/badge/🧠%20%20SELF--CHECK-0B1220?style=for-the-badge&logoWidth=90"></a>
 </p>
 
 <p align="center">
-  <a href="#-discussion-questions"><img src="https://img.shields.io/badge/💬%20%20DISCUSSION-0B1220?style=for-the-badge&logoWidth=90"></a>
-  <a href="#-whats-next"><img src="https://img.shields.io/badge/⏭️%20%20WHAT'S%20NEXT-0B1220?style=for-the-badge&logoWidth=90"></a>
-  <a href="#-need-help"><img src="https://img.shields.io/badge/🆘%20%20NEED%20HELP-0B1220?style=for-the-badge&logoWidth=90"></a>
+  <a href="#discussion"><img src="https://img.shields.io/badge/💬%20%20DISCUSSION-0B1220?style=for-the-badge&logoWidth=90"></a>
+  <a href="#next"><img src="https://img.shields.io/badge/⏭️%20%20WHAT'S%20NEXT-0B1220?style=for-the-badge&logoWidth=90"></a>
+  <a href="#help"><img src="https://img.shields.io/badge/🆘%20%20NEED%20HELP-0B1220?style=for-the-badge&logoWidth=90"></a>
 </p>
 
 ---
-
-
-
 
 
 
@@ -100,6 +96,9 @@ By the end of this module, you will be able to:
 
 ---
 
+<!-- ✅ Put these anchors right BEFORE the corresponding headings in your file -->
+
+<a id="roadmap"></a>
 ## 🗺️ Roadmap: Where This Module Fits
 
 This repository is organized like a **research pipeline**. Each module supports a part of your paper.
