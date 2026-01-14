@@ -399,13 +399,3 @@ Please follow CONTRIBUTING.md.
 
 
 ---
-
-### What will happen next
-In the **next response**, I can optionally:
-
-- Add **hands-on exercises section**
-- Add **real transportation datasets links**
-- Convert this module into **teaching slides**
-- Align preprocessing steps with **IEEE Access methodology style**
-
-I will wait for your instruction after confirming you received **Module 04 fully**.
