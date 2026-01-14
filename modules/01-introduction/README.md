@@ -82,7 +82,7 @@ You only need:
 * ✨ Willingness to learn
 
 ---
-<a id="learning objectives"></a>
+<a id="learning_objectives"></a>
 ## 🎯 Learning Objectives
 
 By the end of this module, you will be able to:
