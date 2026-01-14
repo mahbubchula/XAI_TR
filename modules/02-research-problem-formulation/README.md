@@ -285,250 +285,34 @@ A **well-defined ML problem** clearly specifies:
 - **What constraints matter** (data limits, ethics, compute, explainability)
 
 When these elements are missing, researchers often face common failures such as unclear scope, data mismatch, misleading evaluation, or models that cannot be trusted or reproduced. This section provides a structured approach to reduce ambiguity and turn ideas into research-ready ML tasks.
+----
+🔁 The Problem Formulation Framework (Step-by-Step)
 
-### 🔁 The Problem Formulation Framework (Step-by-Step)
+A Machine Learning problem should never be defined randomly or intuitively.
+Instead, it should follow a clear reasoning pipeline that gradually removes ambiguity and forces precise decisions.
 
-```text
+Use the following framework whenever you want to convert a research idea into an ML problem:
+
 Research Question
       ↓
-Clarify the objective (what do you want to predict/understand?)
+Clarify the objective (what do you want to predict or understand?)
       ↓
 Define the unit of analysis (what is one data instance?)
       ↓
-Select the ML problem type (classification/regression/clustering/anomaly)
+Select the ML problem type (classification / regression / clustering / anomaly detection)
       ↓
 Specify inputs and outputs (features → target)
       ↓
 Assess data requirements (quantity, quality, representativeness, labels)
       ↓
-Choose metrics + baselines (how to measure success objectively)
+Choose metrics and baselines (how will success be measured objectively?)
       ↓
 Add constraints (ethics, fairness, privacy, compute, explainability)
       ↓
-Well-Defined ML Problem (ready for modeling and experiments)
+Well-Defined ML Problem
+(ready for modeling, experimentation, and evaluation)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1. What is your research field?
-   [Your answer]
-**Example 1: Biology Research**
-
-❓ **Vague Research Question:**
-"I want to study protein functions"
-
-✅ **Well-Defined ML Problem:**
-- **Specific Goal:** Predict protein function categories from amino acid sequences
-- **ML Problem Type:** Multi-class classification
-- **Input Data:** Protein sequences (amino acid strings)
-- **Output:** Function category (enzyme, structural protein, transporter, etc.)
-- **Success Metric:** Accuracy of at least 80% on held-out test proteins
-- **Why XAI Matters:** Identify which sequence patterns indicate specific functions
-
----
-
-**Example 2: Environmental Science**
-
-❓ **Vague Research Question:**
-"I want to predict climate change impacts"
-
-✅ **Well-Defined ML Problem:**
-- **Specific Goal:** Predict regional temperature increases over the next decade
-- **ML Problem Type:** Regression (time series)
-- **Input Data:** Historical climate data, greenhouse gas measurements, ocean temperatures
-- **Output:** Temperature change (°C) for specific regions and years
-- **Success Metric:** Mean absolute error < 0.5°C compared to benchmark models
-- **Why XAI Matters:** Understand which factors contribute most to temperature changes
-
----
-
-**Example 3: Medical Research**
-
-❓ **Vague Research Question:**
-"Can we detect diseases earlier?"
-
-✅ **Well-Defined ML Problem:**
-- **Specific Goal:** Identify patients at high risk for Type 2 diabetes in the next 5 years
-- **ML Problem Type:** Binary classification
-- **Input Data:** Patient demographics, lab results, medical history, lifestyle factors
-- **Output:** Risk prediction (high risk / low risk)
-- **Success Metric:** Recall of 85% (catch 85% of future cases) with precision > 60%
-- **Why XAI Matters:** Explain to doctors and patients which factors indicate risk
-
----
-
-### Section 4: Defining Success Metrics
-
-**Why This Matters:**
-Success metrics tell you:
-- When your model is "good enough"
-- How to compare different approaches
-- What to report in your research paper
-
-**Common Metrics:**
-
-#### For Classification:
-
-**Accuracy:** Percentage of correct predictions
-- Use when: Classes are balanced, all errors are equally important
-- Example: 90% accuracy means 9 out of 10 predictions are correct
-
-**Precision:** Of the items predicted as positive, how many were actually positive?
-- Use when: False positives are costly
-- Example: Of patients predicted to have disease, what % actually have it?
-
-**Recall (Sensitivity):** Of the actual positive items, how many did we find?
-- Use when: Missing positives is costly
-- Example: Of patients who have disease, what % did we identify?
-
-**F1-Score:** Balance between precision and recall
-- Use when: You need both precision and recall to be good
-
-#### For Regression:
-
-**Mean Absolute Error (MAE):** Average difference between predictions and actual values
-- Use when: You want easy-to-understand error in original units
-- Example: Temperature predictions are off by 2.5°C on average
-
-**Root Mean Square Error (RMSE):** Penalizes large errors more
-- Use when: Large errors are particularly bad
-
-**R² Score:** How much of the variance is explained (0-1, higher is better)
-- Use when: You want to know if your model is better than a simple baseline
-
-#### Choosing the Right Metric:
-
-Ask yourself:
-1. **What type of error is worse?**
-   - Missing a disease case? Use Recall
-   - False alarm that wastes resources? Use Precision
-   
-2. **How do I want to report results?**
-   - In original units? Use MAE
-   - As percentage of variance explained? Use R²
-
-3. **What do reviewers expect in my field?**
-   - Check published papers in your field for standard metrics
-
----
-
-
-
-
-
-### Section 5: Understanding Your Data Needs
-
-**Data Quantity:**
-
-| ML Task | Typical Minimum | Good Amount | Excellent |
-|---------|----------------|-------------|-----------|
-| Simple Classification | 100-200 per class | 1,000 per class | 10,000+ per class |
-| Complex Classification | 500-1,000 per class | 5,000 per class | 50,000+ per class |
-| Simple Regression | 200-500 examples | 2,000 examples | 10,000+ examples |
-| Complex Regression | 1,000-2,000 examples | 10,000 examples | 100,000+ examples |
-
-*Note: These are rough guidelines. Quality > Quantity!*
-
-**Data Quality Checklist:**
-
-✅ **Relevance:** Does the data relate to what you want to predict?
-
-✅ **Completeness:** How much missing data do you have?
-- < 5% missing: Usually fine
-- 5-20% missing: Manageable with techniques
-- \> 20% missing: May need more data collection
-
-✅ **Labels (for supervised learning):** Are your labels accurate?
-- Who labeled the data?
-- How reliable are the labels?
-- Is there disagreement between labelers?
-
-✅ **Representativeness:** Does the data cover all scenarios?
-- All seasons, conditions, populations?
-- Rare but important cases?
-
-✅ **Balance (for classification):**
-- Do you have similar numbers of each class?
-- Very imbalanced? (e.g., 99% one class, 1% other) - Special techniques needed
-
-**Potential Data Sources:**
-
-1. **Your Own Data Collection**
-   - Experiments, surveys, observations
-   - Most relevant but time-intensive
-
-2. **Public Datasets**
-   - Government databases, research repositories
-   - Quick start but may not fit perfectly
-
-3. **Collaborations**
-   - Partner institutions, multi-site studies
-   - Increases data volume and diversity
-
-4. **Historical Records**
-   - Existing databases, archived measurements
-   - Already available but may have quality issues
-
----
-
-### Section 6: The Problem Formulation Worksheet
-
-Complete this worksheet to formulate your ML research problem:
-
-#### Part 1: Research Context
-```
-2. What is your broad research interest?
-   [Your answer]
-
-3. What specific question do you want to answer?
-   [Your answer]
-```
-
-#### Part 2: ML Problem Definition
-```
-4. What exactly do you want to predict or discover?
-   [Your answer]
-
-5. What type of ML problem is this?
-   [ ] Classification (predicting categories)
-   [ ] Regression (predicting numbers)
-   [ ] Clustering (finding groups)
-   [ ] Anomaly Detection (finding unusual cases)
-   [ ] Other: __________
-
-6. Is this supervised (have labels) or unsupervised (no labels)?
-   [Your answer]
-```
-
-#### Part 3: Input and Output
-```
-7. What are your input features (what data will you use)?
-   Example: Age, weight, blood pressure, genetic markers
-   
-   [Your answer - list all features]
-
-8. What is your output (what are you predicting)?
-   Example: Disease risk (high/low) or Recovery time (days)
-   
-   [Your answer]
-```
 
 #### Part 4: Data Assessment
 ```
