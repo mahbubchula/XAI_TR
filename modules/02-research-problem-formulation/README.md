@@ -659,6 +659,8 @@ Plan evaluation and explainability from the start
 Create a single reference document for your entire ML project
 
 Once completed, the worksheet becomes the blueprint for data collection, modeling, evaluation, and reporting.
+
+
 🧩 How the Worksheet Is Structured
 
 ### 🔹 Part 1: Research Context
