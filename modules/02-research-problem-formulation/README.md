@@ -317,7 +317,6 @@ Add constraints
 Well-Defined ML Problem  
 (Ready for modeling, experimentation, and evaluation)
 
-#### Part 4: Data Assessment
 ```
 9. How much data do you currently have?
    [Your answer]
