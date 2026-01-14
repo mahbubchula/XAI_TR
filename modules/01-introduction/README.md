@@ -46,7 +46,6 @@ Copy only this block and replace your current navigation section
   <a href="#-discussion-questions"><img src="https://img.shields.io/badge/💬%20DISCUSSION-GO-EC4899?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
   <a href="#-whats-next"><img src="https://img.shields.io/badge/⏭️%20WHAT'S%20NEXT-GO-4F46E5?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
   <a href="#-need-help"><img src="https://img.shields.io/badge/🆘%20NEED%20HELP-GO-DC2626?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
-  <a href="#assumptions"><img src="https://img.shields.io/badge/🧾%20ASSUMPTIONS-GO-94A3B8?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
 </p>
 
 ---
@@ -485,10 +484,18 @@ Not necessarily. Many tools are user-friendly, but basic coding helps you contro
 
 ---
 
+## 🆘 Need Help?
+
+* 💬 Concept questions → open a GitHub Discussion
+* 🐛 Found an issue → open a GitHub Issue
+
+**Last Updated:** January 2026
+
+---
 ## ⏭️ What’s Next?
 
 You’ve completed **Module 01** 🎉
-Next: **Module 02 — Research Problem Formulation** → `../02-research-problem-formulation/README.md`
+Next: **Module 02 — Research Problem Formulation** 
 
 **Before moving on:**
 
@@ -498,21 +505,6 @@ Next: **Module 02 — Research Problem Formulation** → `../02-research-problem
 
 ---
 
-## 🆘 Need Help?
 
-* 💬 Concept questions → open a GitHub Discussion
-* 🐛 Found an issue → open a GitHub Issue
 
-**Last Updated:** January 2026
-
----
-
-## Assumptions
-
-* The banner image file will be added at: `visuals/module-01-banner.png` (replace/remove the `<img>` if not available).
-* Later modules will cover data selection, preprocessing, modeling, evaluation, XAI methods, deployment, and paper writing in detail.
-* This repository is a research-learning workflow (not a production ML framework).
-
-```
-```
 
