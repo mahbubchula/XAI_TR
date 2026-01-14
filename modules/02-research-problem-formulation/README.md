@@ -321,6 +321,67 @@ Well-Defined ML Problem
 9. How much data do you currently have?
    [Your answer]
 
+🧪 Example 1: Biology Research
+❓ Vague Research Question
+
+“I want to study protein functions.”
+
+Why this is vague:
+It does not specify what should be predicted, how data will be used, or how success will be evaluated.
+
+✅ Well-Defined ML Problem
+
+Specific Goal
+Predict protein function categories directly from amino acid sequences.
+
+ML Problem Type
+Multi-class classification (multiple functional categories).
+
+Input Data
+Protein sequences represented as amino acid strings.
+
+Output
+Functional class (enzyme, structural protein, transporter, etc.).
+
+Success Metric
+Accuracy ≥ 80% on a held-out test dataset.
+
+Why XAI Matters
+Researchers must understand which sequence patterns influence predictions to gain biological insight and trust results.
+
+🧠 Learning insight:
+A descriptive biological interest becomes actionable only after defining labels, data, and evaluation.
+--
+🌍 Example 2: Environmental Science
+❓ Vague Research Question
+
+“I want to predict climate change impacts.”
+
+Why this is vague:
+“Impacts” can mean many things (temperature, rainfall, sea level), across different regions and time horizons.
+
+✅ Well-Defined ML Problem
+
+Specific Goal
+Predict regional temperature increases over the next decade.
+
+ML Problem Type
+Regression (time-series forecasting).
+
+Input Data
+Historical climate records, greenhouse gas concentrations, ocean temperature indicators.
+
+Output
+Temperature change (°C) for specific regions and years.
+
+Success Metric
+Mean Absolute Error (MAE) < 0.5°C compared to benchmark models.
+
+Why XAI Matters
+Policymakers and scientists need to know which environmental factors contribute most to predicted changes.
+
+🧠 Learning insight:
+Clear temporal and spatial scope is essential in forecasting problems.
 10. What is the quality of your data?
     Completeness (% missing): [Your answer]
     Label reliability: [Your answer]
