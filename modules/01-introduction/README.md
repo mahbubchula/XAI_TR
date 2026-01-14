@@ -39,8 +39,8 @@ Paste this entire content into: modules/01-introduction/README.md
 
 <p align="center">
  <a href="#discussion"><img src="https://img.shields.io/badge/💬%20%20DISCUSSION-0B1220?style=for-the-badge&logoWidth=90"></a>
- <a href="#need-help"><img src="https://img.shields.io/badge/🆘%20%20NEED%20HELP-0B1220?style=for-the-badge&logoWidth=90"></a>
  <a href="#whats-next"><img src="https://img.shields.io/badge/⏭️%20%20WHAT'S%20NEXT-0B1220?style=for-the-badge&logoWidth=90"></a>
+ <a href="#need-help"><img src="https://img.shields.io/badge/🆘%20%20NEED%20HELP-0B1220?style=for-the-badge&logoWidth=90"></a>
 </p>
 
 ---
@@ -482,20 +482,6 @@ Not necessarily. Many tools are user-friendly, but basic coding helps you contro
 
 ---
 
-<!-- =========================
-✅ FIXED ANCHORS for: Need Help + What's Next
-Step 1: Put these anchors JUST ABOVE the headings
-========================= -->
-
-<a id="need-help"></a>
-## 🆘 Need Help?
-
-* 💬 Concept questions → open a GitHub Discussion
-* 🐛 Found an issue → open a GitHub Issue
-
-**Last Updated:** January 2026
-
----
 
 <a id="whats-next"></a>
 ## ⏭️ What’s Next?
@@ -510,10 +496,15 @@ Next: 👉 **[Module 02 — Research Problem Formulation](../02-research-problem
 
 ---
 
+<a id="need-help"></a>
+## 🆘 Need Help?
+
+* 💬 Concept questions → open a GitHub Discussion
+* 🐛 Found an issue → open a GitHub Issue
+
+**Last Updated:** January 2026
 
 ---
-
-
 
 
 
