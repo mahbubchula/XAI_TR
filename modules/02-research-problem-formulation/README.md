@@ -307,6 +307,7 @@ Add constraints (ethics, fairness, privacy, compute, explainability)
       ↓
 Well-Defined ML Problem (ready for modeling and experiments)
 
+
 **Example 1: Biology Research**
 
 ❓ **Vague Research Question:**
@@ -406,6 +407,10 @@ Ask yourself:
    - Check published papers in your field for standard metrics
 
 ---
+
+
+
+
 
 ### Section 5: Understanding Your Data Needs
 
