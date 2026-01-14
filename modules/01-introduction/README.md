@@ -39,8 +39,8 @@ Paste this entire content into: modules/01-introduction/README.md
 
 <p align="center">
  <a href="#discussion"><img src="https://img.shields.io/badge/💬%20%20DISCUSSION-0B1220?style=for-the-badge&logoWidth=90"></a>
- <a href="#whats-next"><img src="https://img.shields.io/badge/⏭️%20%20WHAT'S%20NEXT-0B1220?style=for-the-badge&logoWidth=90"></a>
  <a href="#need-help"><img src="https://img.shields.io/badge/🆘%20%20NEED%20HELP-0B1220?style=for-the-badge&logoWidth=90"></a>
+ <a href="#whats-next"><img src="https://img.shields.io/badge/⏭️%20%20WHAT'S%20NEXT-0B1220?style=for-the-badge&logoWidth=90"></a>
 </p>
 
 ---
