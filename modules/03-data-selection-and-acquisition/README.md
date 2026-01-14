@@ -1,327 +1,428 @@
-# Module 03: Data Selection and Acquisition
+# **Module 03: Data Selection and Acquisition for Transportation and Traffic Engineering Research**
 
-**Audience:** Transportation Engineering and Traffic Engineering Researchers  
-**Level:** Beginner to Intermediate (Non-CS Background Friendly)  
-**Status:** ✅ Complete  
-**Last Updated:** January 2026  
-
----
-
-## Module Overview
-
-Data selection and acquisition form the foundation of empirical transportation research.  
-This module introduces **how to identify, evaluate, and collect data** for transportation and traffic engineering studies, with emphasis on **open data**, **ethical research practice**, and **publication-quality workflows**.
-
-This module is designed for researchers **without a computer science background**.
+**Audience:** Transportation Engineering and Traffic Engineering Researchers
+**Level:** Beginner to Intermediate (Non-CS Background Friendly)
+**Status:** ✅ Complete
+**Last Updated:** January 2026
 
 ---
 
-## Prerequisites
+## 📋 Module Overview
 
-- Module 01: Introduction to Data-Driven Transportation Research  
-- Module 02: Research Problem Formulation  
+Data selection and acquisition constitute the **most critical empirical decision** in transportation and traffic engineering research.
+Unlike laboratory sciences, transportation studies rely predominantly on **observational, opportunistic, and administrative data**, which introduces unavoidable bias, uncertainty, and measurement error.
+
+This module provides a **research-driven, publication-oriented framework** for selecting, evaluating, and acquiring transportation data.
+The emphasis is on **scientific defensibility**, **ethical responsibility**, and **reproducibility**, not merely technical data collection.
+
+This module is explicitly designed for researchers **without a computer science background**, but it reflects the **expectations of top-tier journals**.
 
 ---
 
-## Learning Objectives
+## ✅ Prerequisites
+
+* **Module 01:** Foundations of AI, ML, and XAI for Research
+* **Module 02:** Research Problem Formulation
+
+You should already have:
+
+* A clearly defined research question
+* Identified dependent and independent variables
+* An understanding of why data-driven methods are appropriate
+
+---
+
+## 🎯 Learning Objectives
 
 By the end of this module, you will be able to:
 
-- Identify suitable data types for transportation research
-- Locate high-quality open and free transportation datasets
-- Select data based on research questions rather than convenience
-- Apply ethical and privacy principles in data collection
-- Assess data quality before modeling
-- Plan a reproducible data acquisition strategy
+* Select transportation data **based on research questions**, not availability
+* Distinguish between data suitability, data convenience, and data bias
+* Identify and access **high-quality open transportation datasets**
+* Understand strengths and limitations of different transportation data types
+* Apply ethical, privacy, and governance principles in mobility data
+* Perform **pre-modeling data quality screening**
+* Design a **reproducible and auditable data acquisition strategy**
+* Prepare data documentation suitable for **Q1 journal submission**
 
 ---
 
-## 3.1 Why Data Selection Matters in Transportation Research
+## **3.1 Why Data Selection Matters in Transportation Research**
 
-Transportation research relies primarily on **observational data**, not controlled experiments.  
-This makes data quality and suitability critical.
+Transportation research is fundamentally **observational**, not experimental.
 
-Poor data selection can lead to:
-- Biased results
-- Invalid conclusions
-- Model overfitting
-- Rejection during peer review
+Researchers rarely control:
 
-Data selection is therefore a **scientific decision**, not merely a technical step.
+* Traffic demand
+* Weather
+* Human behavior
+* Infrastructure conditions
 
----
+As a result, **data quality and relevance directly determine scientific validity**.
 
-## 3.2 Types of Data in Transportation and Traffic Engineering
+### Consequences of Poor Data Selection
 
-### 3.2.1 Data by Structure
+Poor data decisions lead to:
 
-| Data Type | Description | Examples |
-|---------|------------|----------|
-| Structured | Tabular rows and columns | Traffic counts, crash databases |
-| Semi-structured | Fixed schema but complex | GTFS Realtime, JSON APIs |
-| Unstructured | Free-form content | Accident narratives, CCTV footage |
+* Spurious correlations
+* Overfitted models
+* Misleading policy recommendations
+* Ethical violations
+* Rejection during peer review
 
----
-
-### 3.2.2 Data by Temporal Nature
-
-| Category | Definition | Example |
-|-------|------------|--------|
-| Cross-sectional | One-time snapshot | Household travel survey |
-| Time series | Continuous over time | Speed every 30 seconds |
-| Panel | Same unit tracked over time | Vehicle trajectories |
+In transportation research, **data selection is a methodological decision**, not a preprocessing step.
 
 ---
 
-### 3.2.3 Data by Spatial Representation
+## **3.2 Conceptual Framework for Transportation Data**
 
-| Spatial Scale | Example |
-|-------------|--------|
-| Point-based | Bus stop boarding counts |
-| Link-based | Road segment speed |
-| Network-based | Origin–destination matrices |
-| Area-based | Zone-level emissions |
+Transportation data can be classified along **four orthogonal dimensions**:
 
----
+1. Structural form
+2. Temporal resolution
+3. Spatial representation
+4. Behavioral interpretation
 
-## 3.3 Open and Free Transportation Data Sources
-
-All data sources below are **free**, **open**, and **widely used in peer-reviewed research**.
+A dataset is suitable **only if all four dimensions align with the research question**.
 
 ---
 
-### 3.3.1 Government and Public Agency Data
+## **3.3 Types of Data in Transportation and Traffic Engineering**
 
-Commonly available through **open data portals**.
+### **3.3.1 Data by Structural Form**
 
-**Typical datasets**
-- Traffic volume and speed
-- Crash and safety records
-- Infrastructure inventories
-- Policy and planning indicators
+| Data Type       | Description            | Examples                     | Typical Use       |
+| --------------- | ---------------------- | ---------------------------- | ----------------- |
+| Structured      | Fixed rows and columns | Traffic counts, crash tables | Regression, ML    |
+| Semi-structured | Schema with hierarchy  | GTFS, JSON APIs              | Network analytics |
+| Unstructured    | Free-form content      | Accident narratives, video   | NLP, CV           |
 
-| Source Type | Example Use Case |
-|-----------|----------------|
-| National transport agencies | Policy evaluation |
-| City open data portals | Urban traffic analysis |
-| Police departments | Crash severity modeling |
+**Key Insight:**
+Structured data is easiest to analyze, but unstructured data often contains **richer behavioral information**.
 
 ---
 
-### 3.3.2 Public Transport and GTFS Data
+### **3.3.2 Data by Temporal Resolution**
 
-GTFS (General Transit Feed Specification) is a global standard.
+| Category        | Definition           | Example                 | Typical Pitfall    |
+| --------------- | -------------------- | ----------------------- | ------------------ |
+| Cross-sectional | Single snapshot      | Household travel survey | No dynamics        |
+| Time series     | Continuous over time | Speed every 30 seconds  | Non-stationarity   |
+| Panel           | Same unit over time  | Vehicle trajectories    | Missing continuity |
 
-| Dataset | Description | Applications |
-|-------|-------------|--------------|
-| GTFS Static | Routes, stops, schedules | Accessibility analysis |
-| GTFS Realtime | Delays, vehicle positions | Service reliability |
-| AVL GPS data | Vehicle trajectories | Headway and bunching |
-
----
-
-### 3.3.3 Traffic Sensors and ITS Data
-
-| Sensor Type | Data Collected |
-|-----------|----------------|
-| Loop detectors | Volume, occupancy |
-| Bluetooth sensors | Travel time |
-| Radar sensors | Speed and spacing |
-| ANPR cameras | OD estimation |
+Transportation systems are **dynamic**, making temporal alignment critical.
 
 ---
 
-### 3.3.4 Road Safety and Accident Data
+### **3.3.3 Data by Spatial Representation**
 
-| Data Component | Typical Fields |
-|--------------|---------------|
-| Location | Latitude, longitude |
-| Time | Date, hour |
-| Severity | Fatal, injury, PDO |
+| Spatial Unit  | Example       | Research Implication   |
+| ------------- | ------------- | ---------------------- |
+| Point-based   | Bus stops     | High spatial precision |
+| Link-based    | Road segments | Network dependency     |
+| Network-based | OD matrices   | Flow conservation      |
+| Area-based    | Traffic zones | Aggregation bias       |
+
+⚠ Mixing spatial scales without justification is a **common reviewer criticism**.
+
+---
+
+### **3.3.4 Data by Behavioral Meaning**
+
+| Data Type      | What It Represents  |
+| -------------- | ------------------- |
+| Traffic counts | Supply utilization  |
+| GPS traces     | Individual movement |
+| Surveys        | Stated preferences  |
+| Ticketing data | Revealed behavior   |
+
+**Important:**
+Behavioral interpretation must be **explicitly stated** in your paper.
+
+---
+
+## **3.4 Open and Free Transportation Data Sources**
+
+All sources below are **free**, **public**, and **widely cited in peer-reviewed literature**.
+
+---
+
+### **3.4.1 Government and Public Agency Data**
+
+Typically available through:
+
+* National open data portals
+* City open data platforms
+* Transport authority websites
+
+**Common datasets include:**
+
+* Traffic volumes and speeds
+* Crash and safety records
+* Road inventory
+* Emissions and environment
+
+| Provider Type      | Typical Research Use |
+| ------------------ | -------------------- |
+| National agencies  | Policy evaluation    |
+| Municipal portals  | Urban mobility       |
+| Police departments | Safety modeling      |
+
+---
+
+### **3.4.2 Public Transport and GTFS Data**
+
+GTFS is a **global standard** for public transport data.
+
+| Dataset       | Description              | Applications  |
+| ------------- | ------------------------ | ------------- |
+| GTFS Static   | Routes, stops, schedules | Accessibility |
+| GTFS Realtime | Delays, positions        | Reliability   |
+| AVL GPS       | Vehicle movement         | Bunching      |
+
+GTFS data is especially powerful for:
+
+* Network-level analysis
+* Service quality assessment
+* Real-time decision support
+
+---
+
+### **3.4.3 Traffic Sensors and ITS Data**
+
+| Sensor         | Data Collected    | Typical Bias      |
+| -------------- | ----------------- | ----------------- |
+| Loop detectors | Volume, occupancy | Lane bias         |
+| Bluetooth      | Travel time       | Sample bias       |
+| Radar          | Speed             | Angle sensitivity |
+| ANPR           | OD flows          | Privacy concerns  |
+
+Sensor limitations must be **explicitly acknowledged**.
+
+---
+
+### **3.4.4 Road Safety and Accident Data**
+
+| Attribute   | Typical Fields    |
+| ----------- | ----------------- |
+| Location    | Coordinates       |
+| Time        | Timestamp         |
+| Severity    | Injury level      |
 | Environment | Weather, lighting |
 
 Used for:
-- Crash prediction
-- Hotspot analysis
-- Safety performance functions
+
+* Crash prediction
+* Black-spot analysis
+* Safety performance functions
+
+⚠ Under-reporting bias is common and must be discussed.
 
 ---
 
-### 3.3.5 Survey and Behavioral Data
+### **3.4.5 Survey and Behavioral Data**
 
-| Survey Type | Application |
-|------------|------------|
-| Household travel survey | Mode choice |
-| Stated preference | EV adoption |
+| Survey Type         | Application  |
+| ------------------- | ------------ |
+| Household travel    | Mode choice  |
+| Stated preference   | EV adoption  |
 | Revealed preference | Route choice |
 
-> **Note:** Survey data requires ethics approval and informed consent.
+⚠ Requires:
+
+* Ethics approval
+* Informed consent
+* Secure data handling
 
 ---
 
-### 3.3.6 Social Media and Textual Data
+### **3.4.6 Social Media and Textual Data**
 
-| Source | Research Use |
-|------|-------------|
-| Twitter X | Incident detection |
-| Facebook public pages | Sentiment analysis |
-| Online reviews | Service quality assessment |
+| Source            | Research Use       |
+| ----------------- | ------------------ |
+| Twitter X         | Incident detection |
+| Facebook (public) | Public sentiment   |
+| Online reviews    | Service quality    |
 
-⚠ Only **publicly accessible content** may be used.
+⚠ Only **public content** is permissible.
+Private or scraped personal data is ethically unacceptable.
 
 ---
 
-## 3.4 Data Acquisition Methods
+## **3.5 Data Acquisition Methods**
 
-### 3.4.1 Direct Download (Recommended for Beginners)
+### **3.5.1 Direct Download (Recommended)**
 
-Formats commonly used:
-- CSV
-- Excel
-- Parquet
-- Shapefiles
+Formats:
+
+* CSV
+* Excel
+* Parquet
+* Shapefiles
 
 Advantages:
-- Simple
-- Transparent
-- Easy to document
+
+* Simple
+* Transparent
+* Reviewer-friendly
 
 ---
 
-### 3.4.2 APIs (Application Programming Interfaces)
+### **3.5.2 APIs (Dynamic Data)**
 
-Used for **dynamic or real-time data**.
+Used for:
+
+* Real-time traffic
+* Public transport feeds
+* Weather integration
 
 Conceptual workflow:
 
-
-Examples:
-- Traffic speed APIs
-- Public transport APIs
-- Weather APIs
+```
+Request → Response → Storage → Documentation
+```
 
 No advanced programming is required initially.
 
 ---
 
-### 3.4.3 Web Scraping (Advanced)
+### **3.5.3 Web Scraping (Advanced and Sensitive)**
 
-Used when data is public but not downloadable.
+Used only when:
+
+* Data is public
+* No download option exists
 
 ⚠ Must comply with:
-- Terms of service
-- Ethical research standards
-- Journal policies
+
+* Terms of service
+* Institutional ethics
+* Journal policies
 
 ---
 
-## 3.5 Ethical and Privacy Considerations
+## **3.6 Ethical and Privacy Considerations**
 
-Transportation data often reflects **human mobility behavior**.
+Transportation data reflects **human mobility**, which is inherently sensitive.
 
-### Core Ethical Principles
+### Core Principles
 
-| Principle | Explanation |
-|---------|-------------|
-| Anonymization | Remove personal identifiers |
-| Aggregation | Prefer zone-level analysis |
-| Consent | Required for surveys |
-| Transparency | Clear data description |
+| Principle     | Explanation           |
+| ------------- | --------------------- |
+| Anonymization | Remove identifiers    |
+| Aggregation   | Prefer zones          |
+| Consent       | Mandatory for surveys |
+| Transparency  | Clear disclosure      |
 
-Most journals require an **Ethics Statement**.
+Most Q1 journals require:
 
----
-
-## 3.6 Data Quality Assessment
-
-### 3.6.1 Core Quality Dimensions
-
-| Dimension | Key Question |
-|---------|--------------|
-| Completeness | Are values missing |
-| Accuracy | Are values realistic |
-| Consistency | Are units consistent |
-| Timeliness | Is data outdated |
-| Bias | Is sample representative |
+* Ethics statement
+* Data governance description
 
 ---
 
-### 3.6.2 Transportation-Specific Checks
+## **3.7 Data Quality Assessment Before Modeling**
 
-- Speed greater than 200 km/h is unrealistic
-- Negative traffic volume is invalid
-- Duplicate GPS points indicate sensor errors
-- Spatial outliers often reflect GPS drift
+### **3.7.1 Core Quality Dimensions**
+
+| Dimension    | Question           |
+| ------------ | ------------------ |
+| Completeness | Missing values     |
+| Accuracy     | Realistic values   |
+| Consistency  | Unit alignment     |
+| Timeliness   | Temporal relevance |
+| Bias         | Representativeness |
 
 ---
 
-## 3.7 Planning a Data Collection Strategy
+### **3.7.2 Transportation-Specific Sanity Checks**
 
-Always follow a **research-driven approach**.
+* Speed > 200 km/h → sensor error
+* Negative flow → invalid
+* Duplicate GPS points → device fault
+* Sudden jumps → GPS drift
 
-### Step-by-Step Strategy
+These checks must be **reported**, not hidden.
 
-1. Define the research question
+---
+
+## **3.8 Designing a Data Collection Strategy**
+
+Always follow a **research-driven workflow**.
+
+### Step-by-Step Framework
+
+1. Define research question
 2. Identify required variables
-3. Map variables to data sources
-4. Check availability and coverage
-5. Estimate preprocessing effort
-6. Document assumptions
+3. Map variables to datasets
+4. Check spatial and temporal coverage
+5. Assess preprocessing effort
+6. Document assumptions and exclusions
+
+This process should be **explicitly described in your methodology section**.
 
 ---
 
-## 3.8 Documentation and Reproducibility
+## **3.9 Documentation and Reproducibility**
 
-Create a **Data Description Table** for your paper.
+Every paper must include a **Data Description Table**.
 
-| Item | Description |
-|----|-------------|
-| Data source | Agency or provider |
-| Time period | Start and end |
-| Spatial coverage | City or region |
-| Variables | Key features |
-| Limitations | Known issues |
+| Item        | Description   |
+| ----------- | ------------- |
+| Source      | Provider      |
+| Period      | Time span     |
+| Coverage    | Spatial scope |
+| Variables   | Features      |
+| Limitations | Known issues  |
 
-This is essential for **Q1 journal submissions**.
-
----
-
-## 3.9 Common Mistakes to Avoid
-
-- Collecting data without a clear research question
-- Ignoring missing values
-- Mixing incompatible spatial scales
-- Using outdated datasets
-- Failing to document preprocessing
+This table is **mandatory** in most Q1 journals.
 
 ---
 
-## 3.10 Module Summary
+## **3.10 Common Data-Related Mistakes**
+
+* Data collection without a research question
+* Using data simply because it is available
+* Ignoring missingness patterns
+* Mixing incompatible spatial units
+* Using outdated datasets
+* Poor documentation
+
+These errors are frequently cited in **reviewer rejection comments**.
+
+---
+
+## **3.11 Module Summary**
 
 After completing this module, you should be able to:
 
-- Select appropriate transportation datasets
-- Use open and free data sources confidently
-- Address ethics and privacy concerns
-- Evaluate data quality before modeling
-- Prepare for data preprocessing and analysis
+* Select transportation data scientifically
+* Use open data confidently
+* Address ethics and privacy
+* Screen data quality rigorously
+* Prepare for preprocessing and modeling
 
 ---
 
-## Next Module
+## **Next Module**
 
 **Module 04: Data Cleaning, Preprocessing, and Exploratory Analysis**
 
 ---
 
-## Suggested Extensions
+## **Suggested Extensions**
 
-- Hands-on exercises with real datasets  
-- Case studies for safety, transit, and traffic flow  
-- Slide deck version for teaching  
-- IEEE and TRB-aligned research examples  
+* Hands-on notebooks with real datasets
+* Case studies: safety, transit, congestion
+* Teaching slide deck
+* IEEE / TRB / Transportation Research examples
 
 ---
 
-**Contributions are welcome.**  
-Please follow the guidelines in `CONTRIBUTING.md`.
+### **Final Framing Statement**
+
+> In transportation research,
+> models fail because data fails first.
+> Scientific rigor begins at data selection.
+
+---
