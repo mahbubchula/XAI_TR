@@ -558,75 +558,66 @@ Assessing data quality is essential before building any Machine Learning model. 
 
 🔹 Relevance
 
-Does the data actually relate to the target?
+- Does the data actually relate to the target?  
 
-Relevance refers to how directly the input features are connected to the prediction target. If the data does not capture information that influences the outcome, even the best ML model will fail.
+Relevance refers to how directly the input features are connected to the prediction target.
+- If the data does not capture information that influences the outcome, even the best ML model will fail  
+- Ask whether each feature has a logical or scientific relationship with the target  
+- Irrelevant features add noise and reduce model performance  
+- Domain knowledge is crucial for judging relevance  
 
-Ask whether each feature has a logical or scientific relationship with the target
-
-Irrelevant features add noise and reduce model performance
-
-Domain knowledge is crucial for judging relevance
 
 📌 Example:
 Using patient age and blood glucose levels is relevant for diabetes risk prediction, but eye color is not.
 
 🔹 Completeness
+- How much data is missing?  
 
-How much data is missing?
+Completeness measures the extent of missing values in the dataset.
+- Missing data can bias models and reduce usable sample size  
+- Small amounts of missing data (< 5%) are often manageable  
+- Moderate missingness (5–20%) may require imputation techniques  
+- High missingness (> 20%) may indicate the need for additional data collection  
 
-Completeness measures the extent of missing values in the dataset. Missing data can bias models and reduce usable sample size.
-
-Small amounts of missing data (< 5%) are often manageable
-
-Moderate missingness (5–20%) may require imputation techniques
-
-High missingness (> 20%) may indicate the need for additional data collection
 
 📌 Key consideration:
 Understand why data is missing—randomly or systematically—as this affects how it should be handled.
 
 🔹 Label Quality
 
-Who labeled the data, and how reliable are they?
+- Who labeled the data, and how reliable are they?  
 
-Label quality is critical for supervised learning. Incorrect or inconsistent labels limit the maximum performance a model can achieve.
-
-Labels created by experts are generally more reliable
-
-Multiple annotators may disagree, introducing noise
-
-Consistency across time and annotators should be checked
+Label quality is critical for supervised learning.
+- Incorrect or inconsistent labels limit the maximum performance a model can achieve  
+- Labels created by domain experts are generally more reliable  
+- Multiple annotators may disagree, introducing noise  
+- Consistency across time and across annotators should be checked  
 
 📌 Example:
 Medical diagnoses labeled by specialists are more reliable than self-reported outcomes.
 
 🔹 Representativeness
-
-Does the data cover all relevant conditions?
+- Does the data cover all relevant conditions?  
 
 Representativeness refers to whether the dataset reflects the real-world population or conditions where the model will be used.
+- Data should include diverse scenarios, locations, and time periods  
+- Rare but important cases should not be excluded  
+- Lack of representativeness leads to biased predictions  
 
-Data should include diverse scenarios, locations, and time periods
-
-Rare but important cases should not be excluded
-
-Lack of representativeness leads to biased predictions
 
 📌 Example:
 A traffic dataset collected only during daytime may perform poorly at night.
 
 🔹 Balance
 
-Are classes heavily imbalanced?
+- Are classes heavily imbalanced?  
 
-Class balance is especially important in classification problems. Severe imbalance can cause models to favor the majority class.
+Class balance is especially important in classification problems.
+- Severe imbalance can cause models to favor the majority class  
+- Highly imbalanced datasets may produce misleading accuracy  
+- Minority classes often represent critical cases (e.g., fraud, disease)  
+- Special techniques may be required to address imbalance  
 
-Highly imbalanced datasets may produce misleading accuracy
-
-Minority classes often represent critical cases (e.g., fraud, disease)
-
-Special techniques may be required to address imbalance
 
 📌 Example:
 If 99% of transactions are normal and 1% are fraudulent, a model predicting “normal” always would have 99% accuracy—but be useless.
@@ -646,17 +637,12 @@ In Machine Learning research, many projects fail not because of poor models, but
 
 The worksheet is designed to help you:
 
-Clearly articulate your research goal
-
-Identify the correct ML problem type
-
-Define precise inputs and outputs
-
-Assess whether your data can support the problem
-
-Plan evaluation and explainability from the start
-
-Create a single reference document for your entire ML project
+- Clearly articulate your research goal  
+- Identify the correct ML problem type  
+- Define precise inputs and outputs  
+- Assess whether your data can support the problem  
+- Plan evaluation and explainability from the start  
+- Create a single reference document for your entire ML project  
 
 Once completed, the worksheet becomes the blueprint for data collection, modeling, evaluation, and reporting.
 
@@ -928,7 +914,6 @@ Class balance (for classification problems):
 Assess the quality of your dataset across the following key dimensions.  
 Honest answers here are critical for determining whether your ML problem is feasible.
 
----
 
 **Completeness (percentage of missing data):**
 ```md
@@ -942,23 +927,18 @@ Example: Approximately 10% of records have missing values, primarily in laborato
 Indicate whether the currently available data is sufficient to support your Machine Learning problem.
 
 Options:
-```md
 [ ] No, the current dataset is sufficient  
 [ ] Yes, additional data is required
 
 🔹 Part 5: Success Criteria
-```
 **13. What metrics will you use to evaluate success?**
 
 Define how you will measure whether your Machine Learning model is performing well.
 Clearly distinguish between your **primary metric** (main success criterion) and **secondary metrics** (supporting evaluation measures).
 
----
-
 **Primary metric:**
 [Your answer]
 Example: Recall
-
 
 **14. What performance level would make the model useful?**
 
@@ -1024,36 +1004,23 @@ Explainability (XAI) refers to the ability to understand why and how a Machine L
 This question asks you to justify why interpretability is necessary for your specific research problem.
 
 Guidelines:
+- Consider who will use or be affected by the model  
+- Think about trust, accountability, and decision-making  
+- Reflect on ethical, legal, or safety requirements  
+- Explain what could go wrong if the model behaves as a black box  
 
-Consider who will use or be affected by the model
+**Common reasons explainability is important:**
+- To build trust with domain experts (e.g., doctors, scientists, engineers)  
+- To support decision-making rather than replace it  
+- To identify bias, errors, or spurious correlations  
+- To meet regulatory or ethical requirements  
+- To generate scientific insight, not just predictions  
 
-Think about trust, accountability, and decision-making
-
-Reflect on ethical, legal, or safety requirements
-
-Explain what could go wrong if the model behaves as a black box
-
-Common reasons explainability is important:
-
-To build trust with domain experts (e.g., doctors, scientists, engineers)
-
-To support decision-making rather than replace it
-
-To identify bias, errors, or spurious correlations
-
-To meet regulatory or ethical requirements
-
-To generate scientific insight, not just predictions
-
-Examples by domain:
-
-Medical: Clinicians must understand why a patient is predicted high-risk
-
-Environmental: Policymakers need to know which factors drive predictions
-
-Transportation: Traffic planners need interpretable reasons for congestion forecasts
-
-Biology: Researchers want biological meaning, not just labels
+**Examples by domain:**
+- **Medical:** Clinicians must understand why a patient is predicted high-risk  
+- **Environmental:** Policymakers need to know which factors drive predictions  
+- **Transportation:** Traffic planners need interpretable reasons for congestion forecasts  
+- **Biology:** Researchers want biological meaning, not just labels  
 
 Example answer:
 Explainability is important because clinicians need to understand which factors contribute to a patient being classified as high risk in order to trust and act on the model’s predictions.
@@ -1063,37 +1030,24 @@ Explainability is important because clinicians need to understand which factors 
 This question asks you to specify what aspects of the model’s behavior should be interpretable.
 Rather than explaining the entire model, focus on the key insights that matter for decision-making or scientific understanding.
 
-Guidelines:
+**Guidelines:**
+- Identify which features or patterns should be explained  
+- Decide whether explanations are needed at:
+  - the **global level** (overall model behavior), or  
+  - the **local level** (individual predictions)  
+- Align explanations with domain needs and stakeholders  
 
-Identify which features or patterns should be explained
+**Common explanation goals:**
+- Which input features contribute most to predictions?  
+- Why was a specific instance classified or predicted a certain way?  
+- How changes in input variables affect the output?  
+- Whether the model relies on sensible, domain-relevant patterns  
 
-Decide whether explanations are needed at:
-
-the global level (overall model behavior), or
-
-the local level (individual predictions)
-
-Align explanations with domain needs and stakeholders
-
-Common explanation goals:
-
-Which input features contribute most to predictions?
-
-Why was a specific instance classified or predicted a certain way?
-
-How changes in input variables affect the output?
-
-Whether the model relies on sensible, domain-relevant patterns
-
-Examples by domain:
-
-Medical: Which symptoms or lab results most indicate disease risk?
-
-Environmental: Which environmental factors most influence temperature change?
-
-Transportation: Which factors contribute most to traffic congestion at a given time?
-
-Biology: Which sequence patterns indicate specific protein functions?
+**Examples by domain:**
+- **Medical:** Which symptoms or lab results most indicate disease risk?  
+- **Environmental:** Which environmental factors most influence temperature change?  
+- **Transportation:** Which factors contribute most to traffic congestion at a given time?  
+- **Biology:** Which sequence patterns indicate specific protein functions?  
 
 Example answer:
 The model should explain which clinical features (e.g., blood glucose level, BMI, age) contribute most to predicting high diabetes risk for individual patients.
@@ -1103,35 +1057,24 @@ The model should explain which clinical features (e.g., blood glucose level, BMI
 This question identifies the intended audience for the model’s explanations.
 Different audiences require different levels and types of explainability.
 
-Guidelines:
+**Guidelines:**
+- Identify which features or patterns should be explained  
+- Decide whether explanations are needed at:
+  - the **global level** (overall model behavior), or  
+  - the **local level** (individual predictions)  
+- Align explanations with domain needs and stakeholders  
 
-List all stakeholders who will interpret or rely on the model’s outputs
+**Common explanation goals:**
+- Which input features contribute most to predictions?  
+- Why was a specific instance classified or predicted a certain way?  
+- How changes in input variables affect the output?  
+- Whether the model relies on sensible, domain-relevant patterns  
 
-Consider their technical background and decision-making role
-
-Tailor explanations to the needs of each group
-
-Common audiences:
-
-Fellow researchers and data scientists (technical validation)
-
-Domain experts (e.g., clinicians, biologists, engineers)
-
-Decision-makers (e.g., policy makers, planners, managers)
-
-End users (e.g., patients, drivers, citizens)
-
-Regulators or ethics committees
-
-Examples by domain:
-
-Medical: Clinicians, patients, hospital administrators
-
-Environmental: Scientists, policy makers, public agencies
-
-Transportation: Traffic engineers, city planners, operators
-
-Biology: Researchers, experimental scientists
+**Examples by domain:**
+- **Medical:** Which symptoms or lab results most indicate disease risk?  
+- **Environmental:** Which environmental factors most influence temperature change?  
+- **Transportation:** Which factors contribute most to traffic congestion at a given time?  
+- **Biology:** Which sequence patterns indicate specific protein functions?  
 
 Example answer:
 Clinicians and patients need to understand the explanations in order to trust and act on the model’s predictions.
@@ -1239,14 +1182,10 @@ Explanation:
 Many ML projects fail because models are designed without verifying whether suitable data actually exists. Starting with model selection or training before understanding data quantity, quality, and relevance often leads to unrealistic expectations and wasted effort.
 
 A proper approach requires assessing:
-
-How much data is available
-
-Whether the data is relevant to the prediction target
-
-Data quality issues such as missing values or noisy labels
-
-Class balance and representativeness
+- How much data is available  
+- Whether the data is relevant to the prediction target  
+- Data quality issues such as missing values or noisy labels  
+- Class balance and representativeness  
 
 If data is limited or incomplete, the problem scope should be adjusted—for example, simplifying the task, reducing the prediction horizon, or choosing a different ML approach.
 
@@ -1255,14 +1194,10 @@ If data is limited or incomplete, the problem scope should be adjusted—for exa
 ✅ "My model should outperform current clinical guidelines by 10%"
 Explanation:
 Unrealistic performance expectations are a common mistake in Machine Learning research. Real-world data is noisy, incomplete, and uncertain, which makes perfect accuracy scientifically unrealistic in most domains.
-
 Expecting 100% accuracy ignores:
-
-Measurement errors in data
-
-Ambiguity in labels
-
-Inherent uncertainty in real-world processes
+- Measurement errors in data  
+- Ambiguity in labels  
+- Inherent uncertainty in real-world processes  
 
 A realistic goal is to compare the ML model against a meaningful baseline, such as existing expert rules, clinical guidelines, or simple statistical models. Improvement over these baselines represents real progress.
 **Pitfall 4: Ignoring Explainability from the Start**
@@ -1273,11 +1208,10 @@ Explainability is not an optional add-on—it is a core requirement in many Mach
 
 Once a highly complex or opaque model is trained, it can be difficult or even impossible to extract meaningful explanations. Planning explainability early allows researchers to:
 
-Select models that balance accuracy and interpretability
+- Select models that balance accuracy and interpretability  
+- Design experiments that support explanation needs  
+- Ensure alignment with ethical, legal, and domain requirements  
 
-Design experiments that support explanation needs
-
-Ensure alignment with ethical, legal, and domain requirements
 **Pitfall 5: Wrong Problem Type**
 ❌ Treating a regression problem as classification or vice versa
 ✅ Carefully identify whether you're predicting categories or continuous values
@@ -1286,10 +1220,9 @@ Choosing the wrong ML problem type is a serious mistake because it leads to inco
 
 The key difference is the form of the output:
 
-Classification predicts discrete categories/labels
+- Classification predicts discrete categories/labels
 (e.g., disease: yes/no, spam/not spam, risk: high/low)
-
-Regression predicts a continuous numerical value
+- Regression predicts a continuous numerical value
 (e.g., temperature, price, travel time, health score)
 
 If you treat a regression problem as classification, you often lose important information by forcing numeric outcomes into arbitrary categories. If you treat a classification problem as regression, predictions become difficult to interpret and evaluate properly.
@@ -1300,25 +1233,17 @@ Explanation:
 Ethical issues in Machine Learning are often deeply embedded in the problem definition and data, not just in the model itself. Delaying ethical considerations until the end of a project can result in biased, unfair, or even harmful outcomes that are difficult to fix later.
 
 Ethical concerns may include:
-
-Bias and fairness: Unequal performance across demographic or social groups
-
-Privacy: Handling sensitive or personal data responsibly
-
-Transparency: Ability to explain decisions to affected individuals
-
-Potential misuse: Predictions being applied in harmful or unintended ways
+- **Bias and fairness:** Unequal performance across demographic or social groups  
+- **Privacy:** Handling sensitive or personal data responsibly  
+- **Transparency:** Ability to explain decisions to affected individuals  
+- **Potential misuse:** Predictions being applied in harmful or unintended ways  
 
 By addressing ethics during problem formulation, researchers can:
+- Choose appropriate data sources  
+- Define fair evaluation metrics  
+- Plan explainability requirements  
+- Reduce risks of harm and misuse  
 
-Choose appropriate data sources
-
-Define fair evaluation metrics
-
-Plan explainability requirements
-
-Reduce risks of harm and misuse
----
 
 ## 💡 Key Takeaways
 
@@ -1520,7 +1445,7 @@ In the next module, you'll learn how to:
 - **Unsure about problem type?** Ask in Discussions with your research question
 - **Found an error?** Open an [Issue](https://github.com/mahbubchula/XAI_TR/issues)
 
-**Module Contributors:** Mahbub Chula  
+**Module Contributors:** Mahbub Chula, sumon Ray 
 **Last Updated:** January 2026
 
 ---
