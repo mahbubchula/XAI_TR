@@ -18,72 +18,39 @@ Copy only this block and replace your current navigation section
 
 ## 🔎 Quick Navigation
 
-> 🎯 **One-click jump** to any section (desktop users: looks best in GitHub preview)
+<!-- ✅ 4 per row (navbar blocks) + slightly larger icons -->
+<!-- Replace your navigation section with this -->
 
-<table>
-  <tr>
-    <td width="33%" valign="top">
-
-### 🧭 Start Here
-<a href="#-overview">🧭 Overview</a><br>
-<a href="#-prerequisites">✅ Prerequisites</a><br>
-<a href="#-learning-objectives">🎯 Learning Objectives</a><br>
-
-    </td>
-    <td width="33%" valign="top">
-
-### 🗺️ Repo & Workflow
-<a href="#️-roadmap-where-this-module-fits">🗺️ Roadmap</a><br>
-<a href="#-how-to-use-this-repo">🧰 How to Use This Repo</a><br>
-<a href="#-workflow-overview-ml--xai--paper-writing">🔁 Workflow Overview</a><br>
-<a href="#-module-content">📚 Module Content</a><br>
-
-    </td>
-    <td width="33%" valign="top">
-
-### 🧠 Practice & Next
-<a href="#-key-takeaways">💡 Key Takeaways</a><br>
-<a href="#-hands-on-exercise">🧪 Hands-On Exercise</a><br>
-<a href="#-glossary">📖 Glossary</a><br>
-<a href="#-resources-and-further-reading">📚 Resources</a><br>
-<a href="#-self-check-questions">🧠 Self-Check</a><br>
-<a href="#-discussion-questions">💬 Discussion</a><br>
-<a href="#️-whats-next">⏭️ What’s Next?</a><br>
-<a href="#-need-help">🆘 Need Help?</a><br>
-<a href="#assumptions">🧾 Assumptions</a><br>
-
-    </td>
-  </tr>
-</table>
-
-<hr/>
-
-<!-- ✅ Optional: "Button grid" style (looks like blocks) -->
 <p align="center">
-  <a href="#-overview"><img src="https://img.shields.io/badge/🧭%20Overview-Click-blue?style=for-the-badge"></a>
-  <a href="#-prerequisites"><img src="https://img.shields.io/badge/✅%20Prerequisites-Click-brightgreen?style=for-the-badge"></a>
-  <a href="#-learning-objectives"><img src="https://img.shields.io/badge/🎯%20Objectives-Click-orange?style=for-the-badge"></a>
+  <a href="#-overview"><img src="https://img.shields.io/badge/🧭%20OVERVIEW-GO-3B82F6?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
+  <a href="#-prerequisites"><img src="https://img.shields.io/badge/✅%20PREREQUISITES-GO-22C55E?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
+  <a href="#-learning-objectives"><img src="https://img.shields.io/badge/🎯%20OBJECTIVES-GO-F59E0B?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
+  <a href="#-roadmap-where-this-module-fits"><img src="https://img.shields.io/badge/🗺️%20ROADMAP-GO-7C3AED?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
 </p>
 
 <p align="center">
-  <a href="#️-roadmap-where-this-module-fits"><img src="https://img.shields.io/badge/🗺️%20Roadmap-Click-purple?style=for-the-badge"></a>
-  <a href="#-how-to-use-this-repo"><img src="https://img.shields.io/badge/🧰%20Use%20Repo-Click-teal?style=for-the-badge"></a>
-  <a href="#-workflow-overview-ml--xai--paper-writing"><img src="https://img.shields.io/badge/🔁%20Workflow-Click-red?style=for-the-badge"></a>
-  <a href="#-module-content"><img src="https://img.shields.io/badge/📚%20Content-Click-lightgrey?style=for-the-badge"></a>
+  <a href="#-how-to-use-this-repo"><img src="https://img.shields.io/badge/🧰%20USE%20REPO-GO-14B8A6?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
+  <a href="#-workflow-overview-ml--xai--paper-writing"><img src="https://img.shields.io/badge/🔁%20WORKFLOW-GO-E11D48?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
+  <a href="#-module-content"><img src="https://img.shields.io/badge/📚%20CONTENT-GO-64748B?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
+  <a href="#-key-takeaways"><img src="https://img.shields.io/badge/💡%20TAKEAWAYS-GO-EAB308?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
 </p>
 
 <p align="center">
-  <a href="#-key-takeaways"><img src="https://img.shields.io/badge/💡%20Takeaways-Click-yellow?style=for-the-badge"></a>
-  <a href="#-hands-on-exercise"><img src="https://img.shields.io/badge/🧪%20Exercise-Click-success?style=for-the-badge"></a>
-  <a href="#-self-check-questions"><img src="https://img.shields.io/badge/🧠%20Self--Check-Click-informational?style=for-the-badge"></a>
-  <a href="#️-whats-next"><img src="https://img.shields.io/badge/⏭️%20Next-Click-blueviolet?style=for-the-badge"></a>
+  <a href="#-hands-on-exercise"><img src="https://img.shields.io/badge/🧪%20EXERCISE-GO-16A34A?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
+  <a href="#-glossary"><img src="https://img.shields.io/badge/📖%20GLOSSARY-GO-2563EB?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
+  <a href="#-resources-and-further-reading"><img src="https://img.shields.io/badge/📚%20RESOURCES-GO-0EA5E9?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
+  <a href="#-self-check-questions"><img src="https://img.shields.io/badge/🧠%20SELF--CHECK-GO-9333EA?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
 </p>
 
 <p align="center">
-  <a href="#-discussion-questions"><img src="https://img.shields.io/badge/💬%20Discussion-Click-ff69b4?style=for-the-badge"></a>
-  <a href="#-need-help"><img src="https://img.shields.io/badge/🆘%20Help-Click-critical?style=for-the-badge"></a>
-  <a href="#assumptions"><img src="https://img.shields.io/badge/🧾%20Assumptions-Click-9cf?style=for-the-badge"></a>
+  <a href="#-discussion-questions"><img src="https://img.shields.io/badge/💬%20DISCUSSION-GO-EC4899?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
+  <a href="#-whats-next"><img src="https://img.shields.io/badge/⏭️%20WHAT'S%20NEXT-GO-4F46E5?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
+  <a href="#-need-help"><img src="https://img.shields.io/badge/🆘%20NEED%20HELP-GO-DC2626?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
+  <a href="#assumptions"><img src="https://img.shields.io/badge/🧾%20ASSUMPTIONS-GO-94A3B8?style=for-the-badge&labelColor=0B1220&logoWidth=36"></a>
 </p>
+
+---
+
 
 
 ## 🧭 Overview
