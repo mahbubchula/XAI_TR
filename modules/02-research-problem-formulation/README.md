@@ -286,33 +286,36 @@ A **well-defined ML problem** clearly specifies:
 
 When these elements are missing, researchers often face common failures such as unclear scope, data mismatch, misleading evaluation, or models that cannot be trusted or reproduced. This section provides a structured approach to reduce ambiguity and turn ideas into research-ready ML tasks.
 ----
-🔁 The Problem Formulation Framework (Step-by-Step)
+## 🔁 The Problem Formulation Framework
 
-A Machine Learning problem should never be defined randomly or intuitively.
-Instead, it should follow a clear reasoning pipeline that gradually removes ambiguity and forces precise decisions.
+Use this step-by-step framework to transform a broad research idea into a clear, research-ready Machine Learning problem.
 
-Use the following framework whenever you want to convert a research idea into an ML problem:
-
+```text
 Research Question
       ↓
-Clarify the objective (what do you want to predict or understand?)
+Clarify the objective  
+(What do you want to predict or understand?)
       ↓
-Define the unit of analysis (what is one data instance?)
+Define the unit of analysis  
+(What represents one data instance?)
       ↓
-Select the ML problem type (classification / regression / clustering / anomaly detection)
+Select the ML problem type  
+(Classification / Regression / Clustering / Anomaly Detection)
       ↓
-Specify inputs and outputs (features → target)
+Specify inputs and outputs  
+(Features → Target variable)
       ↓
-Assess data requirements (quantity, quality, representativeness, labels)
+Assess data requirements  
+(Quantity, quality, representativeness, labels)
       ↓
-Choose metrics and baselines (how will success be measured objectively?)
+Choose metrics and baselines  
+(How will success be measured objectively?)
       ↓
-Add constraints (ethics, fairness, privacy, compute, explainability)
+Add constraints  
+(Ethics, fairness, privacy, computation, explainability)
       ↓
-Well-Defined ML Problem
-(ready for modeling, experimentation, and evaluation)
-
-
+Well-Defined ML Problem  
+(Ready for modeling, experimentation, and evaluation)
 
 #### Part 4: Data Assessment
 ```
