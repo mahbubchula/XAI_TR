@@ -501,12 +501,15 @@ Step 1: Put these anchors JUST ABOVE the headings
 ## ⏭️ What’s Next?
 
 You’ve completed **Module 01** 🎉  
-Next: **Module 02 — Research Problem Formulation**
+Next: 👉 **[Module 02 — Research Problem Formulation](../02-research-problem-formulation/README.md)**
 
 **Before moving on:**
 - [ ] Review key takeaways
 - [ ] Complete the hands-on exercise
 - [ ] Try the self-check questions
+
+---
+
 
 ---
 
