@@ -273,7 +273,6 @@ A **well-defined ML problem** clearly specifies:
 - **What constraints matter** (data limits, ethics, compute, explainability)
 
 When these elements are missing, researchers often face common failures such as unclear scope, data mismatch, misleading evaluation, or models that cannot be trusted or reproduced. This section provides a structured approach to reduce ambiguity and turn ideas into research-ready ML tasks.
-----
 ## 🔁 The Problem Formulation Framework
 
 Use this step-by-step framework to transform a broad research idea into a clear, research-ready Machine Learning problem.
