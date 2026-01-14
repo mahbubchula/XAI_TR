@@ -321,6 +321,7 @@ Well-Defined ML Problem
 
 
 🧪 Example 1: Biology Research
+
 Biology research focuses on understanding the structure, function, and behavior of living systems, ranging from molecules and cells to organisms and ecosystems. Modern biological research generates large, complex datasets through technologies such as DNA sequencing, proteomics, microscopy, and high-throughput experiments. These data-rich environments make Machine Learning a powerful tool when biological questions are framed carefully.
 
 Biological systems are often highly complex and non-linear, with interactions occurring across multiple scales. As a result, traditional rule-based or purely statistical approaches may struggle to capture hidden patterns in biological data. Machine Learning can help identify relationships, classify biological entities, and make predictions that support discovery and hypothesis generation.
@@ -356,6 +357,7 @@ Researchers must understand which sequence patterns influence predictions to gai
 A descriptive biological interest becomes actionable only after defining labels, data, and evaluation.
 --
 🌍 Example 2: Environmental Science
+
 Environmental science focuses on understanding natural systems and human–environment interactions, including climate, ecosystems, air and water quality, and land use. These systems are inherently complex, interconnected, and dynamic, often influenced by long-term trends as well as short-term variability. As a result, environmental research increasingly relies on data-driven approaches, making Machine Learning a valuable tool when problems are carefully formulated.
 
 Environmental datasets are typically large, heterogeneous, and spatiotemporal, coming from sources such as satellite imagery, weather stations, remote sensors, climate models, and historical records. Machine Learning can help uncover patterns, relationships, and trends in these data that are difficult to model using simple rules or traditional analytical methods alone.
@@ -392,6 +394,7 @@ Clear temporal and spatial scope is essential in forecasting problems.
 
 
 🚦 Example 3: Transportation Research
+
 Transportation research focuses on understanding, predicting, and improving the movement of people and goods across transportation systems such as roads, railways, public transit, and logistics networks. With the growth of sensors, GPS devices, traffic cameras, and smart infrastructure, transportation systems now generate large volumes of spatiotemporal data, making them well-suited for Machine Learning approaches.
 
 However, transportation problems are often complex and dynamic. Traffic conditions change over time, depend heavily on location, and are influenced by many interacting factors such as human behavior, weather, road infrastructure, and unexpected events (accidents, roadworks). As a result, successful ML applications in transportation require careful problem formulation.
@@ -469,7 +472,64 @@ This supports trust, operational decisions, and policy planning.
 🧠 Learning Insight:
 In transportation research, clearly defining location, time horizon, and prediction target is critical for building useful and deployable ML forecasting models.
 
+📊 Section 4: Defining Success Metrics
 
+Defining success metrics is a critical step in Machine Learning research because metrics determine how model performance is measured, compared, and interpreted. Without clearly defined metrics, it is impossible to know whether a model is effective, whether improvements are meaningful, or whether results are suitable for reporting in a research paper.
+
+A success metric translates a research goal into a quantitative measure. It answers the question:
+“What does it mean for this model to perform well?”
+
+Different Machine Learning problems require different evaluation metrics. Choosing an inappropriate metric can lead to misleading conclusions, even if the model appears to perform well.
+
+🧠 Why Success Metrics Matter
+
+Well-chosen success metrics help you:
+
+Determine when a model is good enough for your research objective
+
+Compare multiple models or approaches fairly and objectively
+
+Align model evaluation with real-world or domain-specific priorities
+
+Communicate results clearly to reviewers, stakeholders, and collaborators
+
+Poorly chosen metrics often result in:
+
+Inflated performance claims
+
+Models that optimize the wrong objective
+
+Reviewer criticism due to unclear or inappropriate evaluation
+
+🏷️ Classification (Explanation)
+
+Classification is a type of Machine Learning problem where the goal is to assign each input to one or more predefined categories or labels. In classification tasks, the output is discrete, meaning it belongs to a fixed set of possible classes.
+
+In classification, the model learns from labeled examples, where each training instance is already associated with a correct class. Based on patterns in the input data, the model learns decision boundaries that allow it to assign labels to new, unseen data.
+
+### 📌 Common Metrics for Classification
+
+| Metric | What It Measures | Use When |
+|------|------------------|----------|
+| **Accuracy** | Overall correctness of predictions | Classes are balanced and all errors are equally important |
+| **Precision** | Correctness of positive predictions | False positives are costly |
+| **Recall (Sensitivity)** | Coverage of actual positive cases | Missing positive cases is costly |
+| **F1-Score** | Balance between precision and recall | Both false positives and false negatives matter |
+
+---
+📈 Regression (Explanation)
+
+Regression is a type of Machine Learning problem where the goal is to predict a continuous numerical value. Unlike classification, regression outputs are not categories, but real-valued numbers.
+
+Regression models learn relationships between input features and a numerical target variable. These problems are common in scientific and engineering research where estimation, forecasting, or measurement prediction is required.
+
+### 📌 Common Metrics for Regression
+
+| Metric | Description | Use When |
+|------|-------------|----------|
+| **MAE (Mean Absolute Error)** | Average absolute difference between predictions and actual values | You want errors in interpretable, real-world units |
+| **RMSE (Root Mean Square Error)** | Penalizes large errors more heavily | Large prediction errors are especially costly |
+| **R² (Coefficient of Determination)** | Proportion of variance explained by the model | Comparing performance against a simple baseline |
 
 
 
