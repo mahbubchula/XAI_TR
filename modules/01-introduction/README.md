@@ -116,7 +116,7 @@ This repository is organized like a **research pipeline**. Each module supports 
 | 09 Paper writing                 | Packaging the story                 | Full paper                |
 
 ---
-<a id="use_repo"></a>
+<a id="use-repo"></a>
 ## 🧰 How to Use This Repo
 
 ### ✅ Recommended learning path
