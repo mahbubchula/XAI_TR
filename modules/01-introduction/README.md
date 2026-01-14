@@ -373,7 +373,7 @@ Write & Publish
 * [ ] Open issues when you find improvements
 
 <hr/>
-<a id="takeways"></a>
+<a id="takeaways"></a>
 ## 💡 Key Takeaways
 
 * 🤖 **AI** = intelligent behavior in machines
@@ -445,7 +445,7 @@ Write & Publish
 * 📚 Beginner-friendly books (Mitchell, Domingos)
 
 ---
-
+<a id="self-check"></a>
 ## 🧠 Self-Check Questions
 
 1. What’s the difference between AI and ML?
@@ -473,7 +473,7 @@ Not necessarily. Many tools are user-friendly, but basic coding helps you contro
 </details>
 
 ---
-
+<a id="discussion"></a>
 ## 💬 Discussion Questions
 
 1. In your field, what are the benefits and risks of using AI without explainability?
