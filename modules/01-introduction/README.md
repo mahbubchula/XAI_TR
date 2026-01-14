@@ -3,7 +3,6 @@ Module 01: Introduction (README.md)
 Paste this entire content into: modules/01-introduction/README.md
 ========================================================= -->
 
-![Module 01 Banner](../../visuals/module-01-banner.png)
 
 # Module 01: Introduction to Artificial Intelligence, Machine Learning, and Explainable AI
 
@@ -12,35 +11,80 @@ Paste this entire content into: modules/01-introduction/README.md
 **Goal:** Understand **AI → ML → XAI** and how they connect to writing a strong **research paper/thesis**.
 
 ---
+<!-- =========================
+🔎 Quick Navigation (Visual)
+Copy only this block and replace your current navigation section
+========================== -->
 
 ## 🔎 Quick Navigation
 
-* [🧭 Overview](#-overview)
-* [✅ Prerequisites](#-prerequisites)
-* [🎯 Learning Objectives](#-learning-objectives)
-* [🗺️ Roadmap: Where This Module Fits](#️-roadmap-where-this-module-fits)
-* [🧰 How to Use This Repo](#-how-to-use-this-repo)
-* [🔁 Workflow Overview (ML → XAI → Paper Writing)](#-workflow-overview-ml--xai--paper-writing)
-* [📚 Module Content](#-module-content)
+> 🎯 **One-click jump** to any section (desktop users: looks best in GitHub preview)
 
-  * [Section 1: What is Artificial Intelligence (AI)?](#section-1-what-is-artificial-intelligence-ai)
-  * [Section 2: What is Machine Learning (ML)?](#section-2-what-is-machine-learning-ml)
-  * [Section 3: What is Explainable AI (XAI)?](#section-3-what-is-explainable-ai-xai)
-  * [Section 4: The AI Research Workflow](#section-4-the-ai-research-workflow)
-  * [Section 5: Real-World Research Success Stories](#section-5-real-world-research-success-stories)
-  * [Section 6: Common Myths About AI/ML](#section-6-common-myths-about-aiml)
-  * [Section 7: How to Use This Course](#section-7-how-to-use-this-course)
-* [💡 Key Takeaways](#-key-takeaways)
-* [🧪 Hands-On Exercise](#-hands-on-exercise)
-* [📖 Glossary](#-glossary)
-* [📚 Resources and Further Reading](#-resources-and-further-reading)
-* [🧠 Self-Check Questions](#-self-check-questions)
-* [💬 Discussion Questions](#-discussion-questions)
-* [⏭️ What’s Next?](#️-whats-next)
-* [🆘 Need Help?](#-need-help)
-* [Assumptions](#assumptions)
+<table>
+  <tr>
+    <td width="33%" valign="top">
 
----
+### 🧭 Start Here
+<a href="#-overview">🧭 Overview</a><br>
+<a href="#-prerequisites">✅ Prerequisites</a><br>
+<a href="#-learning-objectives">🎯 Learning Objectives</a><br>
+
+    </td>
+    <td width="33%" valign="top">
+
+### 🗺️ Repo & Workflow
+<a href="#️-roadmap-where-this-module-fits">🗺️ Roadmap</a><br>
+<a href="#-how-to-use-this-repo">🧰 How to Use This Repo</a><br>
+<a href="#-workflow-overview-ml--xai--paper-writing">🔁 Workflow Overview</a><br>
+<a href="#-module-content">📚 Module Content</a><br>
+
+    </td>
+    <td width="33%" valign="top">
+
+### 🧠 Practice & Next
+<a href="#-key-takeaways">💡 Key Takeaways</a><br>
+<a href="#-hands-on-exercise">🧪 Hands-On Exercise</a><br>
+<a href="#-glossary">📖 Glossary</a><br>
+<a href="#-resources-and-further-reading">📚 Resources</a><br>
+<a href="#-self-check-questions">🧠 Self-Check</a><br>
+<a href="#-discussion-questions">💬 Discussion</a><br>
+<a href="#️-whats-next">⏭️ What’s Next?</a><br>
+<a href="#-need-help">🆘 Need Help?</a><br>
+<a href="#assumptions">🧾 Assumptions</a><br>
+
+    </td>
+  </tr>
+</table>
+
+<hr/>
+
+<!-- ✅ Optional: "Button grid" style (looks like blocks) -->
+<p align="center">
+  <a href="#-overview"><img src="https://img.shields.io/badge/🧭%20Overview-Click-blue?style=for-the-badge"></a>
+  <a href="#-prerequisites"><img src="https://img.shields.io/badge/✅%20Prerequisites-Click-brightgreen?style=for-the-badge"></a>
+  <a href="#-learning-objectives"><img src="https://img.shields.io/badge/🎯%20Objectives-Click-orange?style=for-the-badge"></a>
+</p>
+
+<p align="center">
+  <a href="#️-roadmap-where-this-module-fits"><img src="https://img.shields.io/badge/🗺️%20Roadmap-Click-purple?style=for-the-badge"></a>
+  <a href="#-how-to-use-this-repo"><img src="https://img.shields.io/badge/🧰%20Use%20Repo-Click-teal?style=for-the-badge"></a>
+  <a href="#-workflow-overview-ml--xai--paper-writing"><img src="https://img.shields.io/badge/🔁%20Workflow-Click-red?style=for-the-badge"></a>
+  <a href="#-module-content"><img src="https://img.shields.io/badge/📚%20Content-Click-lightgrey?style=for-the-badge"></a>
+</p>
+
+<p align="center">
+  <a href="#-key-takeaways"><img src="https://img.shields.io/badge/💡%20Takeaways-Click-yellow?style=for-the-badge"></a>
+  <a href="#-hands-on-exercise"><img src="https://img.shields.io/badge/🧪%20Exercise-Click-success?style=for-the-badge"></a>
+  <a href="#-self-check-questions"><img src="https://img.shields.io/badge/🧠%20Self--Check-Click-informational?style=for-the-badge"></a>
+  <a href="#️-whats-next"><img src="https://img.shields.io/badge/⏭️%20Next-Click-blueviolet?style=for-the-badge"></a>
+</p>
+
+<p align="center">
+  <a href="#-discussion-questions"><img src="https://img.shields.io/badge/💬%20Discussion-Click-ff69b4?style=for-the-badge"></a>
+  <a href="#-need-help"><img src="https://img.shields.io/badge/🆘%20Help-Click-critical?style=for-the-badge"></a>
+  <a href="#assumptions"><img src="https://img.shields.io/badge/🧾%20Assumptions-Click-9cf?style=for-the-badge"></a>
+</p>
+
 
 ## 🧭 Overview
 
