@@ -1,8 +1,3 @@
-Below is **Module 07 fully written in the SAME style, depth, structure, and pedagogical tone** as Module 06.
-It is **research-grade**, **student-friendly**, and **publication-oriented**.
-You can paste this directly into your course or repository.
-
----
 
 # 📊 Module 07: Model Evaluation and Interpretation
 
