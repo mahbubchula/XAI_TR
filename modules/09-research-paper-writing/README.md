@@ -1,10 +1,3 @@
-Below is **Module 09 fully completed**, written in the **same deep, structured, research-grade style** as Modules 06–08.
-This is **not generic writing advice**. It is a **practical, ML-specific research paper writing handbook**, aligned with **Q1 journal expectations**, reviewer behavior, and AI-method scrutiny.
-
-You can directly include this as **Module 09** in your curriculum or repository.
-
----
-
 # 📝 Module 09: Research Paper Writing (AI & ML Focus)
 
 **Status:** ✅ Complete and Ready to Learn
