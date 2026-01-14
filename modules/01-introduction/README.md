@@ -116,7 +116,7 @@ This repository is organized like a **research pipeline**. Each module supports 
 | 09 Paper writing                 | Packaging the story                 | Full paper                |
 
 ---
-
+<a id="use repo"></a>
 ## 🧰 How to Use This Repo
 
 ### ✅ Recommended learning path
@@ -148,7 +148,7 @@ cd modules/01-introduction
 > Treat each module as a **paper-building block**. By Module 09, you’ll have most sections drafted.
 
 ---
-
+<a id="workflow"></a>
 ## 🔁 Workflow Overview (ML → XAI → Paper Writing)
 
 **Figure 1 — Research-to-Paper Workflow (ML + XAI):**
@@ -193,7 +193,7 @@ mindmap
 ```
 
 <hr/>
-
+<a id="content"></a>
 ## 📚 Module Content
 
 ### Section 1: What is Artificial Intelligence (AI)?
@@ -373,7 +373,7 @@ Write & Publish
 * [ ] Open issues when you find improvements
 
 <hr/>
-
+<a id="takeways"></a>
 ## 💡 Key Takeaways
 
 * 🤖 **AI** = intelligent behavior in machines
@@ -383,7 +383,7 @@ Write & Publish
 * ✅ Beginners can start now and build step-by-step
 
 ---
-
+<a id="exercise"></a>
 ## 🧪 Hands-On Exercise
 
 ### Exercise 1: Identifying AI Opportunities in Your Research
@@ -420,7 +420,7 @@ Write & Publish
 </details>
 
 ---
-
+<a id="glossary"></a>
 ## 📖 Glossary
 
 | Term          | Meaning                                                      |
@@ -433,7 +433,7 @@ Write & Publish
 | **Black box** | A model whose reasoning isn’t transparent                    |
 
 ---
-
+<a id="resources"></a>
 ## 📚 Resources and Further Reading
 
 > [!TIP]
