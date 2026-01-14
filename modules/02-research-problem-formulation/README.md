@@ -138,7 +138,6 @@ In research settings, misidentifying the problem type is a common and costly mis
 Broadly, most Machine Learning research problems fall into four major categories: **classification**, **regression**, **clustering**, and **anomaly detection**. Each category answers a different kind of research question, requires different forms of data, and serves different scientific goals. This section introduces these problem types, explains their defining characteristics, and provides research-oriented examples to help you accurately identify the category that best matches your research question.
 
 
----
 
 ## 🧩 At a Glance: ML Problem Types
 
@@ -149,7 +148,6 @@ Broadly, most Machine Learning research problems fall into four major categories
 | 🧬 Clustering | Groups | *What patterns exist?* | Patient subgroups |
 | 🚨 Anomaly Detection | Normal / Abnormal | *Is this unusual?* | Fraud detection |
 
----
 
 ## 🏷️ 2.1 Classification Problems
 Classification problems focus on assigning each input instance to one or more **predefined categories or labels**. The goal is to learn a decision boundary from labeled examples so that the model can correctly categorize unseen data. Classification is one of the most widely used ML problem types, especially in research domains where decisions are categorical rather than numerical.
@@ -176,8 +174,6 @@ Classification problems focus on assigning each input instance to one or more **
 ✔ When your output is a **label or category**
 
 
----
-
 ## 📈 2.2 Regression Problems
 Regression problems aim to predict a **continuous numerical value** based on input features. Unlike classification, where outputs are discrete categories, regression outputs are real-valued quantities. These problems are common in scientific research where estimation, forecasting, or measurement prediction is required.
 
@@ -198,8 +194,6 @@ Regression problems aim to predict a **continuous numerical value** based on inp
 🧠 **When to use regression**  
 ✔ When your output is a **number**
 
-
----
 
 ## 🧬 2.3 Clustering Problems
 Clustering problems involve **grouping similar data points together without predefined labels**. The objective is not prediction, but discovery—uncovering hidden structures or natural groupings within the data. Clustering is especially useful in exploratory research and early-stage data analysis.
@@ -222,8 +216,6 @@ Clustering problems involve **grouping similar data points together without pred
 ✔ When you want **discovery**, not prediction
 
 
----
-
 ## 🚨 2.4 Anomaly Detection
 Anomaly detection focuses on identifying **rare, unusual, or abnormal instances** that deviate significantly from normal patterns in the data. These problems are important in research areas where rare events carry high significance, such as fraud detection, fault diagnosis, or rare disease identification.
 
@@ -244,7 +236,6 @@ Anomaly detection focuses on identifying **rare, unusual, or abnormal instances*
 🧠 **When to use anomaly detection**  
 ✔ When **rare events matter more than average cases**
 
----
 
 ## 🧭 How to Choose the Right Problem Type (1-Minute Rule)
 
@@ -253,7 +244,7 @@ Anomaly detection focuses on identifying **rare, unusual, or abnormal instances*
 - Discover **hidden structure** → 🧬 Clustering  
 - Detect **rare events** → 🚨 Anomaly Detection  
 
----
+
 
 ## ⚠️ Common Beginner Confusions
 
@@ -262,15 +253,12 @@ Anomaly detection focuses on identifying **rare, unusual, or abnormal instances*
 - ❌ Ignoring imbalance in classification or anomaly detection  
 - ❌ Choosing the problem type after seeing model results
 
----
 
 ## 🔑 Core Takeaway
 
 > **Problem type selection is a thinking task, not a coding task.**  
 > Get this right, and the rest of your ML pipeline becomes much easier.
 
-
---
 ### Section 3: From Research Question to a Well-Defined ML Problem
 
 Transforming a research question into a well-defined Machine Learning (ML) problem is one of the most important skills in ML research. A research question is often written in broad, human-friendly language (e.g., “Can we detect diseases earlier?”), while an ML problem must be expressed in a precise, testable form that a model can learn from data and that researchers can evaluate objectively.
@@ -317,7 +305,6 @@ Add constraints
 Well-Defined ML Problem  
 (Ready for modeling, experimentation, and evaluation)
 
-```
 
 
 🧪 Example 1: Biology Research
@@ -355,7 +342,7 @@ Researchers must understand which sequence patterns influence predictions to gai
 
 🧠 Learning insight:
 A descriptive biological interest becomes actionable only after defining labels, data, and evaluation.
---
+
 🌍 Example 2: Environmental Science
 
 Environmental science focuses on understanding natural systems and human–environment interactions, including climate, ecosystems, air and water quality, and land use. These systems are inherently complex, interconnected, and dynamic, often influenced by long-term trends as well as short-term variability. As a result, environmental research increasingly relies on data-driven approaches, making Machine Learning a valuable tool when problems are carefully formulated.
@@ -493,7 +480,6 @@ In classification, the model learns from labeled examples, where each training i
 | **Recall (Sensitivity)** | Coverage of actual positive cases | Missing positive cases is costly |
 | **F1-Score** | Balance between precision and recall | Both false positives and false negatives matter |
 
----
 📈 Regression 
 
 Regression is a type of Machine Learning problem where the goal is to predict a continuous numerical value. Unlike classification, regression outputs are not categories, but real-valued numbers.
@@ -1130,8 +1116,6 @@ Limited computing resources and need fast predictions.
 Describe the practical constraints related to time, expertise, and budget for your Machine Learning project.
 This information helps determine whether the proposed ML problem is **realistic and achievable**.
 
----
-
 **Time available:**
 [Your answer]
 Example: 3 months for data preparation, modeling, and evaluation.
@@ -1293,8 +1277,6 @@ Dr. Sarah is a marine biologist studying coral reefs. She's noticed that some re
    Need to understand which factors most affect reef health to guide conservation efforts. Want to identify if temperature, human activity, or species diversity is the main driver, which can inform policy decisions and interventions.
 </details>
 
----
-
 ### Exercise 2: Your Own Research Problem
 
 **Objective:** Formulate your own research question as an ML problem.
@@ -1414,7 +1396,6 @@ In the next module, you'll learn how to:
 - Want to review basics? Go back to [Module 01](../01-introduction/)
 - Want to see data in action? Preview [Module 03](../03-data-selection-and-acquisition/)
 
----
 
 ## 📞 Need Help?
 
@@ -1424,7 +1405,5 @@ In the next module, you'll learn how to:
 
 **Module Contributors:** Mahbub Chula, sumon Ray 
 **Last Updated:** January 2026
-
----
 
 **Great progress!** 🚀 You're building a solid foundation. See you in Module 03!
