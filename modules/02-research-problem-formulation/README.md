@@ -335,23 +335,23 @@ It does not specify what should be predicted, how data will be used, or how succ
 
 ✅ Well-Defined ML Problem
 
-Specific Goal
+**Specific Goal**  
 Predict protein function categories directly from amino acid sequences.
 
-ML Problem Type
+**ML Problem Type**  
 Multi-class classification (multiple functional categories).
 
-Input Data
+**Input Data**  
 Protein sequences represented as amino acid strings.
 
-Output
+**Output**  
 Functional class (enzyme, structural protein, transporter, etc.).
 
-Success Metric
+**Success Metric**  
 Accuracy ≥ 80% on a held-out test dataset.
 
-Why XAI Matters
-Researchers must understand which sequence patterns influence predictions to gain biological insight and trust results.
+**Why XAI Matters**  
+Researchers must understand which sequence patterns influence predictions to gain biological insight and trust the results.
 
 🧠 Learning insight:
 A descriptive biological interest becomes actionable only after defining labels, data, and evaluation.
@@ -371,22 +371,22 @@ Why this is vague:
 
 ✅ Well-Defined ML Problem
 
-Specific Goal
+**Specific Goal**  
 Predict regional temperature increases over the next decade.
 
-ML Problem Type
+**ML Problem Type**  
 Regression (time-series forecasting).
 
-Input Data
+**Input Data**  
 Historical climate records, greenhouse gas concentrations, ocean temperature indicators.
 
-Output
+**Output**  
 Temperature change (°C) for specific regions and years.
 
-Success Metric
+**Success Metric**  
 Mean Absolute Error (MAE) < 0.5°C compared to benchmark models.
 
-Why XAI Matters
+**Why XAI Matters**  
 Policymakers and scientists need to know which environmental factors contribute most to predicted changes.
 
 🧠 Learning insight:
@@ -400,22 +400,15 @@ Transportation research focuses on understanding, predicting, and improving the 
 However, transportation problems are often complex and dynamic. Traffic conditions change over time, depend heavily on location, and are influenced by many interacting factors such as human behavior, weather, road infrastructure, and unexpected events (accidents, roadworks). As a result, successful ML applications in transportation require careful problem formulation.
 
 In Machine Learning–based transportation research, problems typically involve one or more of the following goals:
-
-Prediction (e.g., travel time, congestion level, demand)
-
-Classification (e.g., accident severity, incident type)
-
-Pattern discovery (e.g., identifying traffic regimes or travel behavior)
-
-Anomaly detection (e.g., detecting sensor failures or abnormal traffic patterns)
+- **Prediction** (e.g., travel time, congestion level, demand)  
+- **Classification** (e.g., accident severity, incident type)  
+- **Pattern discovery** (e.g., identifying traffic regimes or travel behavior)  
+- **Anomaly detection** (e.g., detecting sensor failures or abnormal traffic patterns)  
 
 A key challenge in transportation research is the need to clearly define:
-
-Spatial scope (which roads, intersections, or regions)
-
-Temporal scope (minutes, hours, days, or long-term trends)
-
-Unit of analysis (road segment, vehicle, trip, or time window)
+- **Spatial scope** (which roads, intersections, or regions)  
+- **Temporal scope** (minutes, hours, days, or long-term trends)  
+- **Unit of analysis** (road segment, vehicle, trip, or time window)  
 
 Without these definitions, a transportation research question remains too vague for ML modeling.
 
@@ -423,50 +416,40 @@ Without these definitions, a transportation research question remains too vague 
 
 “I want to improve traffic conditions.”
 
-Why this is vague:
+**Why this is vague:**
+- “Improve traffic conditions” does not specify what aspect of traffic is being addressed (congestion, travel time, accidents, emissions)  
+- The location is unclear (city-wide, highways, specific intersections)  
+- The time horizon is undefined (minutes, hours, days)  
 
-“Improve traffic conditions” is unclear because it does not specify:
+Without these details, the problem cannot be formulated as a Machine Learning task.
 
-What aspect of traffic (congestion, travel time, accidents, emissions)
-
-Which location (city-wide, highways, intersections)
-
-Over what time period (minutes, hours, days)
-
-Without these details, the problem cannot be formulated as an ML task.
 
 ✅ Well-Defined ML Problem
 
-Specific Goal
+**Specific Goal**  
 Predict traffic congestion levels on major urban roads 30 minutes in advance to support traffic management and route planning.
 
-ML Problem Type
+**ML Problem Type**  
 Regression (time-series forecasting).
 
-Input Data
+**Input Data**
+- Historical traffic speed and volume data  
+- Road network information  
+- Time-related features (hour of day, day of week)  
+- Weather conditions (rain, temperature)  
+- Incident data (accidents, road works)  
 
-Historical traffic speed and volume data
-
-Road network information
-
-Time-related features (hour of day, day of week)
-
-Weather conditions (rain, temperature)
-
-Incident data (accidents, road works)
-
-Output
+**Output**  
 Predicted traffic congestion level (e.g., average speed or congestion index) for specific road segments and time intervals.
 
-Success Metric
+**Success Metric**  
 Mean Absolute Error (MAE) below a predefined threshold (e.g., MAE < 5 km/h compared to ground-truth speed measurements).
 
-Why XAI Matters
+**Why XAI Matters**  
 Transportation planners and traffic operators need to understand:
+- Which factors (weather, time of day, incidents) most influence congestion  
+- Whether predictions align with known traffic patterns  
 
-Which factors (weather, time of day, incidents) most influence congestion
-
-Whether predictions align with known traffic patterns
 This supports trust, operational decisions, and policy planning.
 
 🧠 Learning Insight:
@@ -484,22 +467,16 @@ Different Machine Learning problems require different evaluation metrics. Choosi
 🧠 Why Success Metrics Matter
 
 Well-chosen success metrics help you:
-
-Determine when a model is good enough for your research objective
-
-Compare multiple models or approaches fairly and objectively
-
-Align model evaluation with real-world or domain-specific priorities
-
-Communicate results clearly to reviewers, stakeholders, and collaborators
+- Determine when a model is good enough for your research objective  
+- Compare multiple models or approaches fairly and objectively  
+- Align model evaluation with real-world or domain-specific priorities  
+- Communicate results clearly to reviewers, stakeholders, and collaborators  
 
 Poorly chosen metrics often result in:
+- Inflated performance claims  
+- Models that optimize the wrong objective  
+- Reviewer criticism due to unclear or inappropriate evaluation  
 
-Inflated performance claims
-
-Models that optimize the wrong objective
-
-Reviewer criticism due to unclear or inappropriate evaluation
 
 🏷️ Classification 
 
