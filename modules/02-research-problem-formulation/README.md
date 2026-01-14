@@ -956,7 +956,6 @@ Clearly distinguish between your **primary metric** (main success criterion) and
 ---
 
 **Primary metric:**
-```md
 [Your answer]
 Example: Recall
 
@@ -1185,36 +1184,111 @@ This information helps determine whether the proposed ML problem is **realistic 
 ---
 
 **Time available:**
-```md
 [Your answer]
 Example: 3 months for data preparation, modeling, and evaluation.
 
 ### Section 7: Common Pitfalls and How to Avoid Them
+pitfall: In Machine Learning research, pitfalls refer to recurring errors in problem formulation, data handling, evaluation, or ethical consideration that may lead to misleading results, inefficient models, or invalid conclusions.
 
 **Pitfall 1: Problem Too Vague**
 ❌ "I want to use AI for cancer research"
 ✅ "I want to classify tumor images as benign or malignant with >90% accuracy"
+Explanation:
+A vague problem statement does not clearly define what is being predicted, what data will be used, or how success will be measured. As a result, it is impossible to choose the right ML approach, dataset, or evaluation metric.
 
+In contrast, a well-defined problem:
+
+Specifies a clear prediction task (classification of tumor images)
+
+Identifies the output variable (benign vs. malignant)
+
+Defines a measurable success criterion (>90% accuracy)
 **Pitfall 2: Insufficient Data Consideration**
 ❌ Starting model development before checking data availability
 ✅ Assess data first, then adjust problem scope if needed
+Explanation:
+Many ML projects fail because models are designed without verifying whether suitable data actually exists. Starting with model selection or training before understanding data quantity, quality, and relevance often leads to unrealistic expectations and wasted effort.
+
+A proper approach requires assessing:
+
+How much data is available
+
+Whether the data is relevant to the prediction target
+
+Data quality issues such as missing values or noisy labels
+
+Class balance and representativeness
+
+If data is limited or incomplete, the problem scope should be adjusted—for example, simplifying the task, reducing the prediction horizon, or choosing a different ML approach.
 
 **Pitfall 3: Unrealistic Expectations**
 ❌ "My model must be 100% accurate"
 ✅ "My model should outperform current clinical guidelines by 10%"
+Explanation:
+Unrealistic performance expectations are a common mistake in Machine Learning research. Real-world data is noisy, incomplete, and uncertain, which makes perfect accuracy scientifically unrealistic in most domains.
 
+Expecting 100% accuracy ignores:
+
+Measurement errors in data
+
+Ambiguity in labels
+
+Inherent uncertainty in real-world processes
+
+A realistic goal is to compare the ML model against a meaningful baseline, such as existing expert rules, clinical guidelines, or simple statistical models. Improvement over these baselines represents real progress.
 **Pitfall 4: Ignoring Explainability from the Start**
 ❌ "I'll worry about explaining the model after it works"
 ✅ "I'll choose interpretable models and plan XAI techniques early"
+Explanation:
+Explainability is not an optional add-on—it is a core requirement in many Machine Learning applications, especially in research and high-impact domains such as healthcare, environmental policy, biology, and transportation. Treating explainability as an afterthought often leads to models that are accurate but unusable or untrustworthy.
 
+Once a highly complex or opaque model is trained, it can be difficult or even impossible to extract meaningful explanations. Planning explainability early allows researchers to:
+
+Select models that balance accuracy and interpretability
+
+Design experiments that support explanation needs
+
+Ensure alignment with ethical, legal, and domain requirements
 **Pitfall 5: Wrong Problem Type**
 ❌ Treating a regression problem as classification or vice versa
 ✅ Carefully identify whether you're predicting categories or continuous values
+Explanation:
+Choosing the wrong ML problem type is a serious mistake because it leads to incorrect modeling decisions, wrong evaluation metrics, and misleading results.
 
+The key difference is the form of the output:
+
+Classification predicts discrete categories/labels
+(e.g., disease: yes/no, spam/not spam, risk: high/low)
+
+Regression predicts a continuous numerical value
+(e.g., temperature, price, travel time, health score)
+
+If you treat a regression problem as classification, you often lose important information by forcing numeric outcomes into arbitrary categories. If you treat a classification problem as regression, predictions become difficult to interpret and evaluate properly.
 **Pitfall 6: Overlooking Ethical Issues**
 ❌ Not considering bias, fairness, or privacy until publication
 ✅ Address ethical considerations in problem formulation phase
+Explanation:
+Ethical issues in Machine Learning are often deeply embedded in the problem definition and data, not just in the model itself. Delaying ethical considerations until the end of a project can result in biased, unfair, or even harmful outcomes that are difficult to fix later.
 
+Ethical concerns may include:
+
+Bias and fairness: Unequal performance across demographic or social groups
+
+Privacy: Handling sensitive or personal data responsibly
+
+Transparency: Ability to explain decisions to affected individuals
+
+Potential misuse: Predictions being applied in harmful or unintended ways
+
+By addressing ethics during problem formulation, researchers can:
+
+Choose appropriate data sources
+
+Define fair evaluation metrics
+
+Plan explainability requirements
+
+Reduce risks of harm and misuse
 ---
 
 ## 💡 Key Takeaways
