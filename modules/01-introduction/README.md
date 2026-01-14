@@ -1,73 +1,80 @@
 <!-- =========================================================
-   Module 01 README.md — Beginner-Friendly (AI → ML → XAI)
-   Copy-paste this whole file into: modules/01-introduction/README.md
+Module 01: Introduction (README.md)
+Paste this entire content into: modules/01-introduction/README.md
 ========================================================= -->
 
-<div align="center">
+![Module 01 Banner](../../visuals/module-01-banner.png)
 
-# Module 01: Introduction to Artificial Intelligence, Machine Learning, and Explainable Artificial Intelligence
+# Module 01: Introduction to Artificial Intelligence, Machine Learning, and Explainable AI
 
-<p>
-  <img src="https://img.shields.io/badge/Module-01-2F80ED" />
-  <img src="https://img.shields.io/badge/Level-Beginner→Intermediate-27AE60" />
-  <img src="https://img.shields.io/badge/Focus-ML%20%2B%20XAI%20for%20Research-9B51E0" />
-  <img src="https://img.shields.io/badge/Format-Step--by--step-F2994A" />
-</p>
+![Module](https://img.shields.io/badge/Module-01-blue) ![Level](https://img.shields.io/badge/Level-Beginner%E2%86%92Intermediate-brightgreen) ![Focus](https://img.shields.io/badge/Focus-ML%20%2B%20XAI%20for%20Research-purple) ![Duration](https://img.shields.io/badge/Duration-2%E2%80%933%20hours-orange)
 
-**Start here if you’re new to ML.**  
-This module gives you clear definitions, real examples, and a simple research workflow (ML → XAI → Paper Writing).
-
-</div>
+**Goal:** Understand **AI → ML → XAI** and how they connect to writing a strong **research paper/thesis**.
 
 ---
 
 ## 🔎 Quick Navigation
 
-| Section | What you’ll get |
-|---|---|
-| 🧭 [Overview](#-overview) | What this module covers + time needed |
-| ✅ [Prerequisites](#-prerequisites) | What you need before starting |
-| 🎯 [Learning Objectives](#-learning-objectives) | Outcomes you should achieve |
-| 🗺️ [Roadmap](#️-roadmap-where-this-module-fits) | Where Module 01 fits in the full course |
-| 🧰 [How to Use This Repo](#-how-to-use-this-repo) | How to learn effectively from this repository |
-| 🔁 [Workflow Overview](#-workflow-overview-ml--xai--paper-writing) | Mermaid flowchart: ML → XAI → Paper |
-| 📚 [Module Content](#-module-content) | AI, ML, XAI explained step-by-step |
-| 💡 [Key Takeaways](#-key-takeaways) | Summary for quick revision |
-| 🧪 [Hands-On Exercise](#-hands-on-exercise) | Beginner-friendly worksheet |
-| 📖 [Glossary](#-glossary) | Key terms in one place |
-| 📚 [Resources](#-resources-and-further-reading) | Extra learning links list (you can update) |
-| 🧠 [Self-Check](#-self-check-questions) | Test yourself (with collapsible answers) |
-| 💬 [Discussion](#-discussion-questions) | Questions for GitHub Discussions |
-| ⏭️ [What’s Next](#️-whats-next) | Where to go after this module |
+* [🧭 Overview](#-overview)
+* [✅ Prerequisites](#-prerequisites)
+* [🎯 Learning Objectives](#-learning-objectives)
+* [🗺️ Roadmap: Where This Module Fits](#️-roadmap-where-this-module-fits)
+* [🧰 How to Use This Repo](#-how-to-use-this-repo)
+* [🔁 Workflow Overview (ML → XAI → Paper Writing)](#-workflow-overview-ml--xai--paper-writing)
+* [📚 Module Content](#-module-content)
+
+  * [Section 1: What is Artificial Intelligence (AI)?](#section-1-what-is-artificial-intelligence-ai)
+  * [Section 2: What is Machine Learning (ML)?](#section-2-what-is-machine-learning-ml)
+  * [Section 3: What is Explainable AI (XAI)?](#section-3-what-is-explainable-ai-xai)
+  * [Section 4: The AI Research Workflow](#section-4-the-ai-research-workflow)
+  * [Section 5: Real-World Research Success Stories](#section-5-real-world-research-success-stories)
+  * [Section 6: Common Myths About AI/ML](#section-6-common-myths-about-aiml)
+  * [Section 7: How to Use This Course](#section-7-how-to-use-this-course)
+* [💡 Key Takeaways](#-key-takeaways)
+* [🧪 Hands-On Exercise](#-hands-on-exercise)
+* [📖 Glossary](#-glossary)
+* [📚 Resources and Further Reading](#-resources-and-further-reading)
+* [🧠 Self-Check Questions](#-self-check-questions)
+* [💬 Discussion Questions](#-discussion-questions)
+* [⏭️ What’s Next?](#️-whats-next)
+* [🆘 Need Help?](#-need-help)
+* [Assumptions](#assumptions)
 
 ---
 
 ## 🧭 Overview
 
-> [!NOTE]
-> **Goal:** Give beginners a strong foundation in **AI**, **ML**, and **XAI** so you can confidently start ML research and write a thesis/paper.
+Welcome to the beginning of your AI research journey! This module introduces:
 
-Welcome to the beginning of your AI research journey! This module introduces the core ideas of:
+* 🤖 **Artificial Intelligence (AI):** machines doing tasks that usually require human intelligence
+* 📈 **Machine Learning (ML):** AI systems that **learn from data** instead of fixed rules
+* 🔍 **Explainable AI (XAI):** methods that make model decisions **understandable, verifiable, and publishable**
 
-- 🤖 **Artificial Intelligence (AI)** — systems that perform tasks requiring “human-like” intelligence  
-- 📈 **Machine Learning (ML)** — AI systems that **learn from data** rather than explicit rules  
-- 🔎 **Explainable AI (XAI)** — methods that make ML decisions **understandable and trustworthy**
+> [!IMPORTANT]
+> In research, **accuracy alone isn’t enough**. You should also explain *why* a model behaves as it does—especially for scientific claims and high-stakes domains.
 
-**⏱ Duration:** 2–3 hours  
-**🎯 Difficulty:** Beginner
+### ✨ At a Glance (fast summary)
+
+| Concept | What it means                    | Why researchers care           |
+| ------- | -------------------------------- | ------------------------------ |
+| **AI**  | Intelligent behavior in machines | Automation, decision support   |
+| **ML**  | Learning patterns from data      | Prediction, discovery          |
+| **XAI** | Explaining ML decisions          | Trust, insight, publishability |
+
+**⏱ Duration:** 2–3 hours
+**🎯 Difficulty:** Beginner → Intermediate
 
 ---
 
 ## ✅ Prerequisites
 
-> [!TIP]
-> No coding required for understanding this module — but curiosity is required 😄
+None! This is where everyone starts.
 
 You only need:
 
-- 🔍 Curiosity about AI and its applications  
-- 💻 Basic computer skills (reading files, using a web browser)  
-- ✨ Willingness to learn
+* 🔍 Curiosity about AI and its applications
+* 💻 Basic computer skills
+* ✨ Willingness to learn
 
 ---
 
@@ -75,85 +82,426 @@ You only need:
 
 By the end of this module, you will be able to:
 
-| ✅ You will learn to… | 📌 Why it matters for research |
-|---|---|
-| Define **AI**, **ML**, and **XAI** in simple terms | Helps you write clear background sections |
-| Explain why **XAI is essential** | Builds trust, reproducibility, and publishability |
-| Identify **research-use cases** for AI/ML | Helps you form a meaningful ML research problem |
-| Understand the end-to-end **AI research workflow** | Prepares you for Modules 02–09 |
-
----
-
-## 🧠 Mini Cheat Sheet (AI vs ML vs XAI)
-
-| Concept | Simple meaning | Output | Example |
-|---|---|---|---|
-| 🤖 AI | Machines do intelligent tasks | Decisions/actions | Speech assistant answers a question |
-| 📈 ML | AI that learns from data | Predictions | Model predicts disease risk |
-| 🔎 XAI | Explains how/why ML predicted | Explanations | “These features influenced the decision” |
+| You will learn to… ✅                           | So you can… 🧩                         |
+| ---------------------------------------------- | -------------------------------------- |
+| Define **AI**, **ML**, **XAI** in simple terms | Write a clear background section       |
+| Explain **why XAI matters**                    | Justify your methods and improve trust |
+| Identify good **ML research use-cases**        | Form strong research questions         |
+| Map the end-to-end workflow                    | Plan a clean thesis/paper structure    |
 
 ---
 
 ## 🗺️ Roadmap: Where This Module Fits
 
-Think of this course like a research pipeline:
+This repository is organized like a **research pipeline**. Each module supports a part of your paper.
 
-| Module | Focus | What you build for your paper |
-|---|---|---|
-| **01** | AI/ML/XAI foundations | Background + Motivation |
-| 02 | Research problem formulation | Research question + objectives |
-| 03–05 | Data + preprocessing + modeling | Methods section |
-| 06–07 | XAI + evaluation/interpretation | Results + Interpretation |
-| 08–09 | Deployment + paper writing | Full paper/thesis draft |
-
-> [!TIP]
-> If your goal is a research paper/thesis, treat each module like a **paper section** you’ll eventually write:  
-> **problem → methods → results → explanations → discussion**
+| Repo Module                      | Research workflow step              | Paper section it supports |
+| -------------------------------- | ----------------------------------- | ------------------------- |
+| **01** Introduction              | Concepts + big picture              | Introduction / Motivation |
+| 02 Problem formulation           | Research question + success metrics | Problem statement         |
+| 03 Data selection & acquisition  | Data sources + ethics               | Data & Materials          |
+| 04 Data handling & preprocessing | Cleaning + features                 | Methods                   |
+| 05 Model development             | Training + tuning                   | Methods                   |
+| 06 Explainable AI (XAI)          | Explanations + interpretation       | Methods / Results         |
+| 07 Evaluation & interpretation   | Metrics + validation                | Results / Discussion      |
+| 08 Deployment                    | Optional real-world use             | Appendix / System         |
+| 09 Paper writing                 | Packaging the story                 | Full paper                |
 
 ---
 
 ## 🧰 How to Use This Repo
 
 ### ✅ Recommended learning path
-1. Read each module `README.md` in order  
-2. Run any notebooks in `examples/` (if available)  
-3. Complete the exercises + self-check questions  
-4. Keep notes for your paper (problem, data, evaluation, explanation)
 
-### ⚡ Quick start (Git)
+1. Read each module `README.md` in order
+2. Run notebooks in `examples/` (if present)
+3. Complete the hands-on exercises
+4. Keep a running “paper draft” in your notes
+
+### 🚀 Quick start (Git)
+
 ```bash
 git clone <YOUR_REPO_URL>
 cd XAI_TR
 cd modules/01-introduction
+```
 
-<!-- ✅ PASTE FROM HERE (after the Quick start (Git) code block) → till the end of README.md -->
 
-### 🗂 Repo structure (typical)
-| Folder | What it contains |
-|---|---|
-| `modules/` | Step-by-step learning modules (01 → 09) |
-| `examples/` | Notebooks/scripts you can run and modify |
-| `resources/` | Helpful references and extra materials |
-| `visuals/` | Diagrams/figures used in the course |
+### 🗂️ Typical structure
+
+| Folder       | What it contains               |
+| ------------ | ------------------------------ |
+| `modules/`   | Step-by-step modules (01 → 09) |
+| `examples/`  | Notebooks/scripts to run       |
+| `resources/` | Links + reading                |
+| `visuals/`   | Diagrams/figures               |
+
+> [!TIP]
+> Treat each module as a **paper-building block**. By Module 09, you’ll have most sections drafted.
 
 ---
 
 ## 🔁 Workflow Overview (ML → XAI → Paper Writing)
 
-> [!IMPORTANT]
-> **In research, accuracy alone is not enough.**  
-> You must also explain and justify results. That’s where **XAI** helps.
+**Figure 1 — Research-to-Paper Workflow (ML + XAI):**
 
 ```mermaid
 flowchart TD
-  A[Research Question] --> B{Is ML appropriate?}
-  B -->|Yes| C[Collect / Select Data]
-  B -->|No| X[Use classical methods]
-  C --> D[Clean + Preprocess]
-  D --> E[Train ML Model]
-  E --> F[Evaluate Performance]
-  F --> G[Apply XAI Methods]
-  G --> H[Interpret + Validate]
-  H --> I[Write Research Paper]
-  I --> J[Publish / Present]
+  A[🧪 Research Question] --> B{🤔 Is ML appropriate?}
+  B -->|Yes| C[📥 Collect / Select Data]
+  B -->|No| Z[📝 Use non-ML method]
+  C --> D[🧹 Clean + Preprocess]
+  D --> E[🧠 Train ML Model]
+  E --> F[📏 Evaluate Performance]
+  F --> G[🔍 Apply XAI Methods]
+  G --> H[🧾 Interpret + Validate]
+  H --> I[📄 Write Research Paper]
+  I --> J[🎤 Present / Publish]
+```
+
+**Figure 2 — Concept Map (AI → ML → XAI → Paper):**
+
+```mermaid
+mindmap
+  root((AI Research))
+    AI
+      perception
+      reasoning
+      language
+    ML
+      supervised
+      unsupervised
+      reinforcement
+    XAI
+      global_explanations
+      local_explanations
+      trust
+      debugging
+    Paper
+      motivation
+      methods
+      results
+      discussion
+```
+
+<hr/>
+
+## 📚 Module Content
+
+### Section 1: What is Artificial Intelligence (AI)?
+
+**Simple Definition:**
+AI is the ability of machines to perform tasks that typically require human intelligence—like recognizing patterns, making decisions, understanding language, or solving problems.
+
+**Think of it This Way:**
+Teaching a child to recognize animals: show examples → learn patterns → recognize new cases. AI aims for similar “learning and reasoning” behavior in machines.
+
+**Real-World Examples:**
+
+* 📩 **Spam filters:** detect unwanted messages
+* 🎙️ **Voice assistants:** understand and respond to language
+* 🎬 **Recommendation systems:** suggest what you may like
+* 🏥 **Medical support:** help identify patterns in images and signals
+
+**Why Researchers Should Care: AI can help you:**
+
+* ⚡ Analyze large datasets faster
+* 🧩 Discover hidden relationships in data
+* 🔮 Predict outcomes and trends
+* 🔁 Automate repetitive steps
+* 🔬 Improve reproducibility
+
+---
+
+### Section 2: What is Machine Learning (ML)?
+
+**Simple Definition:**
+ML is a subset of AI where computers learn patterns from data rather than being explicitly programmed with rules for every scenario.
+
+**The Analogy:**
+Learning to ride a bike: you try → wobble → adjust → improve. ML learns by exposure to examples and feedback.
+
+#### 🔎 AI vs ML vs Deep Learning vs XAI (quick clarity)
+
+| Term                   | What it is                       | What it’s NOT                |
+| ---------------------- | -------------------------------- | ---------------------------- |
+| **AI**                 | Broad goal: intelligent behavior | A single algorithm           |
+| **ML**                 | Learning from data               | Only neural networks         |
+| **Deep Learning (DL)** | ML using multi-layer neural nets | Always better than ML        |
+| **XAI**                | Explaining model behavior        | A replacement for evaluation |
+
+#### Types of Machine Learning
+
+**Figure 3 — ML types and what you need:**
+
+| Type             | What you provide  | What the model learns | Example                |
+| ---------------- | ----------------- | --------------------- | ---------------------- |
+| ✅ Supervised     | Data + labels     | Predict labels        | Disease vs healthy     |
+| 🔎 Unsupervised  | Data only         | Groups/structure      | Patient clustering     |
+| 🎮 Reinforcement | Rewards/penalties | Best actions          | Robot learning to walk |
+
+**Key Concept: Training vs. Using**
+
+* 🏋️ **Training:** learning patterns from example data (like studying)
+* 🧪 **Inference/Prediction:** applying learned patterns to new data (like an exam)
+
+**Research Applications by Field:**
+
+| Research Field        | ML Application Example                                |
+| --------------------- | ----------------------------------------------------- |
+| Biology               | Predicting protein structures, classifying cell types |
+| Medicine              | Diagnosing diseases, predicting patient outcomes      |
+| Environmental Science | Forecasting climate patterns, monitoring wildlife     |
+| Social Sciences       | Analyzing networks, predicting behaviors              |
+| Engineering           | Optimizing designs, predicting system failures        |
+| Agriculture           | Crop yield prediction, pest detection                 |
+
+---
+
+### Section 3: What is Explainable AI (XAI)?
+
+**The Problem:**
+Many ML models can be **high-performing** but hard to interpret (“black boxes”). In research, unclear reasoning weakens trust, limits insight, and can reduce publication quality.
+
+**Simple Definition:**
+XAI methods make AI decisions understandable. They answer: **“Why did the model predict this?”**
+
+#### Without XAI vs With XAI (mini-scenario)
+
+| Scenario      | What you get                               | Risk                            |
+| ------------- | ------------------------------------------ | ------------------------------- |
+| ❌ Without XAI | “Prediction: cancer (95%)”                 | Hard to verify or trust         |
+| ✅ With XAI    | “Focused on irregular borders + asymmetry” | Supports validation and insight |
+
+#### Why XAI is Critical for Research
+
+1. ✅ **Trust and verification** — ensure decisions are for the right reasons
+2. 🔬 **Scientific discovery** — reveal meaningful drivers in your data
+3. 🛠️ **Debugging and improvement** — detect failure modes and spurious correlations
+4. ⚖️ **Ethical responsibility** — identify bias and unsafe behavior
+5. 📄 **Publication quality** — supports transparent methodology and discussion
+
+#### Types of Explanations
+
+| Type          | Question answered                    | Example                                |
+| ------------- | ------------------------------------ | -------------------------------------- |
+| 🌍 **Global** | “How does the model behave overall?” | “Age & cholesterol matter most.”       |
+| 📍 **Local**  | “Why this prediction for this case?” | “High BP + family history drove risk.” |
+
+---
+
+### Section 4: The AI Research Workflow
+
+**Figure 4 — End-to-end workflow (text version):**
+
+```text
+Research Question
+  ↓
+Is ML Appropriate?
+  ↓
+Collect / Select Data
+  ↓
+Clean + Preprocess
+  ↓
+Train ML Model
+  ↓
+Evaluate Performance
+  ↓
+Apply XAI
+  ↓
+Interpret + Validate
+  ↓
+Write & Publish
+```
+
+> [!NOTE]
+> XAI is most powerful when paired with evaluation. Explanations should complement metrics—not replace them.
+
+---
+
+### Section 5: Real-World Research Success Stories
+
+* 🧬 **Drug discovery:** predict promising compounds faster
+* 🌦️ **Climate prediction:** improve forecasts; identify key climate variables
+* 🛰️ **Archaeology:** detect patterns in satellite imagery; validate signals with XAI
+* 🏥 **Patient risk prediction:** predict complications and explain risk factors
+
+✅ **Pattern:** ML produces predictions, and XAI turns them into **defensible scientific insight**.
+
+---
+
+### Section 6: Common Myths About AI/ML
+
+* ❌ “You must be a programmer to use AI.” → ✅ Many tools are beginner-friendly
+* ❌ “AI solves research automatically.” → ✅ You still need domain expertise + logic
+* ❌ “Only huge datasets work.” → ✅ Many methods succeed with modest data
+* ❌ “Black box is always better.” → ✅ Interpretable models can be competitive
+* ❌ “AI replaces researchers.” → ✅ AI supports researchers; humans drive meaning
+
+---
+
+### Section 7: How to Use This Course
+
+**Course Philosophy:**
+
+* 🧪 Learn by doing
+* 🧱 Start simple, build gradually
+* 🧠 Focus on understanding
+* 📄 Research-first mindset
+
+**What You’ll Need:**
+
+* 💻 Computer + internet
+* 🐍 Python (covered later)
+* ⏳ 5–10 hours/week
+* ✨ Curiosity + patience
+
+**Learning Tips Checklist ✅**
+
+* [ ] Work through modules in order
+* [ ] Try at least one example notebook per module
+* [ ] Write 3–5 bullet “paper notes” after each module
+* [ ] Ask questions in GitHub Discussions
+* [ ] Open issues when you find improvements
+
+<hr/>
+
+## 💡 Key Takeaways
+
+* 🤖 **AI** = intelligent behavior in machines
+* 📈 **ML** = learning from data to predict/discover patterns
+* 🔍 **XAI** = explaining model decisions for trust and insight
+* 🧭 This repo guides you from question → model → explanation → paper
+* ✅ Beginners can start now and build step-by-step
+
+---
+
+## 🧪 Hands-On Exercise
+
+### Exercise 1: Identifying AI Opportunities in Your Research
+
+**Objective:** Reflect on how AI/ML could apply to your research area.
+
+**Your Task:**
+
+1. **Describe your research area** (2–3 sentences)
+
+   * What field do you work in?
+   * What questions do you investigate?
+2. **Identify your data**
+
+   * What kind of data do you collect/use?
+   * How much data do you typically have?
+   * Is it labeled or unlabeled?
+3. **Brainstorm ML applications**
+
+   * Classify/categorize? Predict outcomes? Find hidden patterns? Automate analysis?
+4. **Explainability needs**
+
+   * Why does understanding the model’s reasoning matter in your field?
+   * What would you want the AI to explain?
+
+<details>
+  <summary><b>📌 Example Response (click to expand)</b></summary>
+
+* **Research Area:** I study plant disease in agriculture and investigate environmental conditions that lead to infections.
+* **Data:** Plant images (hundreds/season) + temperature/humidity/soil data. Images labeled as healthy/diseased.
+* **ML Applications:** Detect disease from images; predict outbreaks using environment; rank most important factors.
+* **Explainability Needs:** I need to know which visual cues and environmental features drive predictions to guide prevention.
+
+</details>
+
+---
+
+## 📖 Glossary
+
+| Term          | Meaning                                                      |
+| ------------- | ------------------------------------------------------------ |
+| **AI**        | Systems that perform tasks requiring human-like intelligence |
+| **ML**        | AI that learns patterns from data                            |
+| **XAI**       | Methods that make model decisions understandable             |
+| **Training**  | Teaching a model using example data                          |
+| **Inference** | Using a trained model on new data                            |
+| **Black box** | A model whose reasoning isn’t transparent                    |
+
+---
+
+## 📚 Resources and Further Reading
+
+> [!TIP]
+> Place stable links in `resources/README.md` so modules stay clean and consistent.
+
+* 📘 Essential Reading (non-technical AI + why explainability matters)
+* 🎥 Video Tutorials (intro ML + neural nets visually)
+* 🧩 Interactive Tools (Teachable Machine, TF Playground)
+* 📚 Beginner-friendly books (Mitchell, Domingos)
+
+---
+
+## 🧠 Self-Check Questions
+
+1. What’s the difference between AI and ML?
+
+<details><summary><b>Show Answer</b></summary>
+AI is the broader goal of intelligent behavior; ML is a way to achieve AI by learning patterns from data.
+</details>
+
+2. Why is XAI important for research?
+
+<details><summary><b>Show Answer</b></summary>
+It improves trust, supports scientific insight, helps debugging, and strengthens publishability through transparency.
+</details>
+
+3. Name two types of ML.
+
+<details><summary><b>Show Answer</b></summary>
+Supervised learning and unsupervised learning (also reinforcement learning).
+</details>
+
+4. Do you need to be a programmer to use AI in research?
+
+<details><summary><b>Show Answer</b></summary>
+Not necessarily. Many tools are user-friendly, but basic coding helps you control experiments and write reproducible research.
+</details>
+
+---
+
+## 💬 Discussion Questions
+
+1. In your field, what are the benefits and risks of using AI without explainability?
+2. When is understanding **why** a model predicted something more important than the prediction itself?
+3. What concerns do you have about AI in your research, and how might this repo help?
+
+---
+
+## ⏭️ What’s Next?
+
+You’ve completed **Module 01** 🎉
+Next: **Module 02 — Research Problem Formulation** → `../02-research-problem-formulation/README.md`
+
+**Before moving on:**
+
+* [ ] Review key takeaways
+* [ ] Complete the hands-on exercise
+* [ ] Try the self-check questions
+
+---
+
+## 🆘 Need Help?
+
+* 💬 Concept questions → open a GitHub Discussion
+* 🐛 Found an issue → open a GitHub Issue
+
+**Last Updated:** January 2026
+
+---
+
+## Assumptions
+
+* The banner image file will be added at: `visuals/module-01-banner.png` (replace/remove the `<img>` if not available).
+* Later modules will cover data selection, preprocessing, modeling, evaluation, XAI methods, deployment, and paper writing in detail.
+* This repository is a research-learning workflow (not a production ML framework).
+
+```
+```
 
