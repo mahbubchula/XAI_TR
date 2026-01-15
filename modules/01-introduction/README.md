@@ -373,8 +373,9 @@ Write & Publish
 * [ ] Write 3–5 bullet “paper notes” after each module
 * [ ] Ask questions in GitHub Discussions
 * [ ] Open issues when you find improvements
-
+---
 <hr/>
+
 <a id="takeaways"></a>
 ## 💡 Key Takeaways
 
