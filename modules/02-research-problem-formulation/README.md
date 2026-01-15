@@ -276,8 +276,7 @@ When these elements are missing, researchers often face common failures such as 
 ## 🔁 The Problem Formulation Framework
 
 Use this step-by-step framework to transform a broad research idea into a clear, research-ready Machine Learning problem.
-
-```text
+     text
 Research Question
       ↓
 Clarify the objective  
@@ -878,7 +877,6 @@ Honest answers here are critical for determining whether your ML problem is feas
 
 
 **Completeness (percentage of missing data):**
-```md
 [Your answer]
 Example: Approximately 10% of records have missing values, primarily in laboratory test results.
 
