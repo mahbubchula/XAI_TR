@@ -504,7 +504,7 @@ Next: 👉 **[Module 02 — Research Problem Formulation](../02-research-problem
 
 * 💬 Concept questions → open a GitHub Discussion
 * 🐛 Found an issue → open a GitHub Issue
-
+**Module Contributors:** Mahbub Chula, Pretom Sarkar, Turjoy Das Turjo
 **Last Updated:** January 2026
 
 ---
