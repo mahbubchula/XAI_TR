@@ -193,8 +193,10 @@ mindmap
 ```
 
 <hr/>
+
 <a id="content"></a>
-## 📚 Module Content
+
+## **📚 Module Content**
 
 ### Section 1: What is Artificial Intelligence (AI)?
 
